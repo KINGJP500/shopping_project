@@ -8,9 +8,18 @@
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
 </head>
-<body>
-
-<%= yield %>
-
+<body class="<%= controller_name %> <%= action_name %>">
+    <%= render 'layouts/header' %>
+    <div class="container-fluid">
+        <% flash.each do |key, value| %>
+            <div class="alert alert-<%= key %> col-md-8 col-md-offset-2 main"><%= value %></div>
+        <% end %>
+        <div class="row">
+            <%= yield :sidebar %>
+            <%= yield %>
+        </div>
+    </div>
+    <%= render 'layouts/footer' %>
+    <%= debug(params) if Rails.env.development? %>
 </body>
 </html>

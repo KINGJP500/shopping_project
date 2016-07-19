@@ -11,10 +11,12 @@
 #
 default: &default
   adapter: mysql2
+  database: Dopest_development
   encoding: utf8
-  pool: 5
-  username: root
-  password:
+  username: Dopestadmin
+  password: Sul*fUr/500%@irona$2015
+  port: 3309
+  socket: MySQL
   host: localhost
 
 development:
@@ -49,6 +51,10 @@ test:
 #
 production:
   <<: *default
-  database: Dopest_production
-  username: Dopest
-  password: <%= ENV['DOPEST_DATABASE_PASSWORD'] %>
+  adapter: mysql2
+  encoding: utf8
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>

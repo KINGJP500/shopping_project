@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-    devise_for :org_people, :controllers => { :passwords => "org_people", :confirmations => "org_people/confirmations"}
+    devise_for :org_people, :controllers => {
+        :registrations => "org_people/registrations",
+        :sessions => "org_people/sessions",
+        :passwords => "org_people/passwords",
+        :confirmations => "org_people/confirmations"}
     devise_scope :org_person do
-        get 'signup', to: 'devise/registrations#new'
-        get 'signin',  to: 'devise/sessions#new'
-        delete 'signout', to: 'devise/sessions#destroy'
+        get 'signup', to: 'org_people/registrations#new'
+        get 'signin',  to: 'org_people/sessions#new'
+        delete 'signout', to: 'org_people/sessions#destroy'
     end
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -21,6 +25,7 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :product
     resources :catalogues
+    resources :org_people
     root "catalogues#index"
 
   # Example resource route with options:

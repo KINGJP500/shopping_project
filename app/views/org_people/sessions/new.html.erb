@@ -1,7 +1,7 @@
 <% provide(:title, "Sign in") %>
 <div class="col-md-6 col-md-push-3">
     <center><h1>Log in</h1></center>
-    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%=  form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div>
             <%= f.email_field :email, autofocus: "off", placeholder: "Email", :class => "form-control" %>
         </div>

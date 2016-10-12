@@ -1,7 +1,7 @@
 class AddCountriesRegions < ActiveRecord::Migration
   def up
   	#Typ_Country
- #  	TypCountry.create(id: 4, iso: 'AF',  iso3:'AFG', fips:'AF',  country:'Afghanistan', continent: 'AS', currency_code:'AFN', currency_name:'Afghani', phone_prefix:'93', postal_code:'', languages:'fa-AF,ps,uz-AF,tk', geonameid:'1149361')
+    # TypCountry.create(id: 4, iso: 'AF',  iso3:'AFG', fips:'AF',  country:'Afghanistan', continent: 'AS', currency_code:'AFN', currency_name:'Afghani', phone_prefix:'93', postal_code:'', languages:'fa-AF,ps,uz-AF,tk', geonameid:'1149361')
 	# TypCountry.create(id: 8, iso: 'AL',  iso3:'ALB', fips:'AL',  country:'Albania', continent: 'EU', currency_code: 'ALL', currency_name:'Lek', phone_prefix:'355', postal_code:'', languages:'sq,el', geonameid:'783754')
 	# TypCountry.create(id: 10,iso:  'AQ', iso3: 'ATA', fips: 'AY', country: 'Antarctica',continent:'AN', currency_code:'', currency_name:'', phone_prefix:'', postal_code:'', languages:'', geonameid:'6697173')
 	# TypCountry.create(id: 12,iso:  'DZ', iso3: 'DZA', fips: 'AG', country: 'Algeria',continent: 'AF', currency_code:'DZD', currency_name:'Dinar', phone_prefix:'213', postal_code: '^(d{5})$', languages:'ar-DZ', geonameid:'2589581')

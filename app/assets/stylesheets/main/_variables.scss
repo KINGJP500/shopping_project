@@ -1,0 +1,45 @@
+//Colors
+$white: #fff;
+$black: #000;
+$base-color: #2d3033;
+$font-color: #6c7279;
+$brand-color: #e84545;
+$header-color: #292c47;
+$accent-color: #2b2e4a;
+$button-color: #1abc9c;
+$l-white: #ffffff;
+$d_blue: #2c3e50;
+$b_blue: #021426;
+$b_footer-color: #313454;
+$footer-color: #3a3e64;
+$nav-color: rgba(white, .75);
+
+
+// Typography
+$font: "Raleway", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+$font-accent: "Cardo", Georgia, 'Times New Roman', serif;
+
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+$font-size: 18px;
+$h1-font-size: 25px;
+$h2-font-size: 40px;
+$h3-font-size: 28px;
+$h4-font-size: 22px;
+$h5-font-size: 14px;
+$nav-font-size: 13px;
+
+$line-height: $font-size * 1.6;
+
+// Breakpoints
+$bp-small: 320px;
+$bp-small-2: 480px;
+$bp-small-3: 568px;
+$bp-medium: 640px;
+$bp-medium-2: 768px;
+$bp-large: 1024px;

@@ -1,5 +1,42 @@
 <div id="push"></div>
-<footer class="footer navbar-fixed-bottom">
+<footer class="footer navbar">
+    <div class="info-footer">
+        <div class="container">
+            <!--<div class="dopest_location">
+                <div class="row">
+
+                </div>
+            </div> -->
+            <div class="dopest_social_icon">
+                <div class="row">
+                    <%= content_tag :div, class: "footer-col col-md-4" do %>
+                        <%= content_tag :h3 do %>Location<% end %>
+                        <%= content_tag :p do %>Turks and Caicos Islands<br>Providenciales<br> Five Cays, Sub Division<br>Tel: +1(649)342-6484<br>Tel: +1 (649)246-6787 <% end %>
+                    <% end %>
+                    <%= content_tag :div, class: "footer-col col-md-4" do %>
+                        <%= content_tag :h3 do %>Around the Web<% end %>
+                        <%= content_tag :ul, class: "list-inline" do %>
+                            <%= content_tag(:li, link_to((fa_icon("google-plus-square fa-2x")), "https://plus.google.com/u/1/117368773153310923386/posts", :class => 'btn-social btn-outline', :id => 'my_id')) %>
+                            <%= content_tag(:li, link_to((fa_icon("facebook-square fa-2x")), "#", :class => 'btn-social btn-outline', :id => 'my_id')) %>
+                            <%= content_tag(:li, link_to((fa_icon("twitter-square fa-2x")), "#", :class => 'btn-social btn-outline', :id => 'my_id')) %>
+                            <%= content_tag(:li, link_to((fa_icon("github-square fa-2x")), "#", :class => 'btn-social btn-outline', :id => 'my_id'))  %>
+                            <%= content_tag(:li, link_to((fa_icon("linkedin-square fa-2x")), "#", :class => 'btn-social btn-outline', :id => 'my_id')) %>
+                            <%= content_tag(:li, link_to((fa_icon("instagram fa-2x")), "#", :class => 'btn-social btn-outline', :id => 'my_id')) %>
+                        <% end %>
+                    <% end %>
+                    <%= content_tag :div, class: "footer-col col-md-4" do %>
+                        <%= content_tag :h3 do %>Location<% end %>
+                        <%= content_tag :p do %>Turks and Caicos Islands<br>Providenciales<br> Five Cays, Sub Division<br>Tel: +1(649)342-6484<br>Tel: +1 (649)246-6787 <% end %>
+                    <% end %>
+                </div>
+            </div>
+            <div class="dopest_">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <nav>
             <ul>

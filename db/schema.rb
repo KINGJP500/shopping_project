@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160722024203) do
+ActiveRecord::Schema.define(version: 20161015231302) do
 
   create_table "org_companies", force: :cascade do |t|
     t.string   "name",             limit: 255,   null: false
@@ -157,19 +157,23 @@ ActiveRecord::Schema.define(version: 20160722024203) do
   end
 
   create_table "typ_countries", force: :cascade do |t|
-    t.string   "iso",           limit: 255
-    t.string   "iso3",          limit: 255
-    t.string   "fips",          limit: 255
-    t.string   "country",       limit: 255
-    t.string   "continent",     limit: 255
-    t.string   "currency_code", limit: 255
-    t.string   "currency_name", limit: 255
-    t.string   "phone_prefix",  limit: 255
-    t.string   "postal_code",   limit: 255
-    t.string   "languages",     limit: 255
-    t.string   "geonameid",     limit: 255
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.string   "iso",            limit: 255
+    t.string   "iso3",           limit: 255
+    t.string   "fips",           limit: 255
+    t.string   "country",        limit: 255
+    t.string   "continent",      limit: 255
+    t.string   "currency_code",  limit: 255
+    t.string   "currency_name",  limit: 255
+    t.string   "phone_prefix",   limit: 255
+    t.string   "postal_code",    limit: 255
+    t.string   "languages",      limit: 255
+    t.string   "geonameid",      limit: 255
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.string   "population",     limit: 255
+    t.string   "country_code",   limit: 255
+    t.string   "area_km2",       limit: 255
+    t.string   "gdp_dallar_usd", limit: 255
   end
 
   create_table "typ_fees", force: :cascade do |t|

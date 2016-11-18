@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails'
 
 group :development,:test do
 	gem 'rspec-rails'
@@ -27,10 +27,11 @@ group :test do
 	gem 'launchy'
 end
 
+gem 'animate-scss', '~> 0.0.5'
 gem 'mysql2', '~>0.3.18'
 gem 'bootstrap-sass'
 gem 'sprockets'
-gem 'bcrypt-ruby', '3.1.2'
+#gem 'bcrypt-ruby', '3.1.2'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -83,7 +84,8 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+#gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
 
 # Use unicorn as the app server
 # gem 'unicorn'

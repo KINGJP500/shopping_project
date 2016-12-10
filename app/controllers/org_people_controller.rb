@@ -43,6 +43,5 @@ class OrgPeopleController < ApplicationController
         def update_person_params
             params.require(:org_person).permit(org_contacts_attributes: [:address1, :address2, :city, {typ_countries: :id}, {typ_region: :id},
                 {org_company: :id}, :postal_code, :email, :business_number, :cell_number, :org_person_id, :avatar])
-
         end
 end

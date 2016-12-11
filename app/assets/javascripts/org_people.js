@@ -1,6 +1,7 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
+
 var setupFieldsNeeded, setupManaged;
 $(document). ready(function(){
     var regions;
@@ -18,7 +19,7 @@ $(document). ready(function(){
     $('.photoPreview').click(function(){
         $(this).attr('disabled', 'true');
         $('#uploadAvatar').trigger('click');
-        $('#uploadAvatar').change(function(){
+        $("#uploadAvatar").change(function(){
             $('.photoPreview').removeAttr('disabled');
             readURL(this);
         });
@@ -58,8 +59,8 @@ $(document). ready(function(){
     $('#org_person_org_contacts_attributes_0_typ_countries_id').change(function() {
         var country, escaped_country, options;
         country = $('#org_person_org_contacts_attributes_0_typ_countries_id :selected').text();
-        escaped_country = country.replace(/([ #;&,.+*~\ ':"!^$[ \ ] ()=>|\/@] )/g, '\\$1');
-        options = $(regions).filter("optgroup[label='" + escaped_country + " ']").html();
+        escaped_country = country.replace(/([ #;&,.+*~\':"!^$[\]()=>|\/@])/g, '\\$1');
+        options = $(regions).filter("optgroup[label='" + escaped_country + "']").html();
         if (options){
             $('#org_person_org_contacts_attributes_0_typ_regions_id').html(options).addClass('form-control');
             return $('#org_person_org_contacts_attributes_0_typ_regions_id').show();

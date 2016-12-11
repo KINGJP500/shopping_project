@@ -3,18 +3,18 @@ class OrgPeopleController < ApplicationController
         @person = OrgPerson.find(params[:id])
         @contactInfo = OrgContact.find_or_initialize_by(org_person_id: params[:id])
         @contactInfo[:email] = current_org_person.email
-        # @person.org_contacts.build(@contactInfo.attributes)
+        @person.org_contacts.build(@contactInfo.attributes)
     end
 
     def update
         # Create org_ca to sanitize our hash to proper "contacts" attributes
-        @org_ca = update_person_params["org_contacts_attributes"] ["0"]
+        @org_ca = update_person_params["org_contacts_attributes"]["0"]
         @org_ca[:typ_country_id] = @org_ca.delete :typ_countries
-        @org_ca[:typ_country_id] = @org_ca[:typ_country_id] [:id]
+        @org_ca[:typ_country_id] = @org_ca[:typ_country_id][:id]
         @org_ca[:typ_region_id] = @org_ca.delete :typ_regions
-        @org_ca[:typ_region_id] = @org_ca[:typ_region_id] [:id]
+        @org_ca[:typ_region_id] = @org_ca[:typ_region_id][:id]
         @org_ca[:org_company_id] = @org_ca.delete :org_company
-        @org_ca[:org_company_id] = @org_ca[:org_company_id] [:id]
+        @org_ca[:org_company_id] = @org_ca[:org_company_id][:id]
 
         # Edit function variable in case of failed validation and we re-render :edit
         @peron = OrgPerson.find_by(id: current_org_person.id) #Find the OrgPerson corresponding to org_person
@@ -41,7 +41,8 @@ class OrgPeopleController < ApplicationController
     end
     private
         def update_person_params
-            params.require(:org_person).permit(org_contacts_attributes: [:address1, :address2, :city, {typ_countries: :id}, {typ_region: :id},
-                {org_company: :id}, :postal_code, :email, :business_number, :cell_number, :org_person_id, :avatar])
+            params.require(:org_person).permit(org_contacts_attributes: [:address1, :address2,
+            :city, {typ_countries: :id}, {typ_region: :id}, {org_company: :id}, :postal_code, :email,
+            :business_number, :cell_number, :org_person_id, :avatar])
         end
 end

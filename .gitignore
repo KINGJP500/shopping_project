@@ -8,6 +8,40 @@
 /.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/*
-!/log/.keep
+*.rbc
+capybara-*.html
+.rspec
+/log
 /tmp
+/db/*.sqlite3
+/db/*.mysql2
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+
+# TODO Comment out these rules if you are ok with secrets being upload to the repo
+#   config/initializers/secret_token.rb
+#config/database.yml
+#config/application.yml
+
+## Environment normalisation:
+/.bundle
+/vender/bundle
+
+
+# these should all be checked in to normalise the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unles supporting rmv < 1.11.0 or doing something fancy, ignore this
+#.rvmrc
+
+# dont track tem and backup files
+*bak
+*~
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

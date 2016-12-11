@@ -1,6 +1,6 @@
 module SessionsHelper
 
-    def signed_in
+    def signed_in?
         !current_org_person.nil?
     end
 

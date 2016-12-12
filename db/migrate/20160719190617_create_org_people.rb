@@ -11,8 +11,8 @@ class CreateOrgPeople < ActiveRecord::Migration
     	t.string :stripe_currency
     	t.string :stripe_account_type
     	t.text :stripe_account_status
-        
-      t.timestamps null: false
+
+        t.timestamps null: false
     end
   end
 end

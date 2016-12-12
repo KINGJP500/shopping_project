@@ -1,6 +1,6 @@
 class AddDeviseToOrgPeople < ActiveRecord::Migration
   def self.up
-    change_table :org_people do |t|
+    change_table(:org_people) do |t|
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""

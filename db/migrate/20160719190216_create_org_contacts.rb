@@ -15,7 +15,7 @@ class CreateOrgContacts < ActiveRecord::Migration
     	t.belongs_to :typ_country
     	t.belongs_to :typ_region
         t.belongs_to :org_company
-        t.belongs_to :org_people
+        t.belongs_to :org_person
 
       t.timestamps null: false
     end

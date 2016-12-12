@@ -15,7 +15,7 @@ class CreateOrgProducts < ActiveRecord::Migration
         t.boolean :online_order_available, null: false
         t.float :tax_amount, default: 0
     	t.string :image
-        
+
       t.timestamps null: false
     end
   end

@@ -21,5 +21,5 @@ class OrgContact < ActiveRecord::Base
 
     def address
         [city, postal_code, address1.compact.join(', ')]
-
+    end
 end

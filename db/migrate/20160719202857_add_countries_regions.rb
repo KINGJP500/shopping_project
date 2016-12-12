@@ -6,561 +6,561 @@ class AddCountriesRegions < ActiveRecord::Migration
     TypCountry.create(id: 4, iso: 'AF',  iso3:'AFG', fips:'AF',  country:'Afghanistan', continent: 'AS', currency_code:'AFN', currency_name:'Afghani', phone_prefix:'93', postal_code:'', languages:'fa-AF,ps,uz-AF,tk', geonameid:'1149361',
     population: '291,212,86', area_km2: '647,500', gdp_dallar_usd: '20.65 Billion')
 	TypCountry.create(id: 8, iso: 'AL',  iso3:'ALB', fips:'AL',  country:'Albania', continent: 'EU', currency_code: 'ALL', currency_name:'Lek', phone_prefix:'355', postal_code:'', languages:'sq,el', geonameid:'783754',
-    population:'2,986,952', area_km2:'28,748', gdp_dallar_usd:'12.8 Billion')
-	# TypCountry.create(id: 10,iso:  'AQ', iso3: 'ATA', fips: 'AY', country: 'Antarctica',continent:'AN', currency_code:'', currency_name:'', phone_prefix:'', postal_code:'', languages:'', geonameid:'6697173',
-    # population: '0', area_km2: '14,000,00', gdp_dallar_usd: '')
-	TypCountry.create(id: 12,iso:  'DZ', iso3: 'DZA', fips: 'AG', country: 'Algeria',continent: 'AF', currency_code:'DZD', currency_name:'Dinar', phone_prefix:'213', postal_code: '^(d{5})$', languages:'ar-DZ', geonameid:'2589581',
-    population:'34,586,184', area_km2:'2,381,740', gdp_dallar_usd: '215.7 Billion')
-	TypCountry.create(id: 16,iso:  'AS', iso3: 'ASM', fips: 'AQ', country: 'American Samoa',continent: 'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-684', postal_code:'', languages:'en-AS,sm,to', geonameid:'5880801',
-    population: '57,881', area_km2: '199', gdp_dallar_usd: '462.2 Million')
-	TypCountry.create(id: 20,iso:  'AD', iso3: 'AND', fips: 'AN', country: 'Andorra',continent: 'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'376', postal_code: '^(?:AD)*(d{3})$', languages:'ca,fr-AD,pt', geonameid:'3041565',
-    population: '84,000', area_km2: '468', gdp_dallar_usd: '4.8 Billion')
-	TypCountry.create(id: 24,iso:  'AO', iso3: 'AGO', fips: 'AO', country: 'Angola',continent: 'AF', currency_code:'AOA', currency_name:'Kwanza', phone_prefix:'244', postal_code:'', languages:'pt-AO', geonameid:'3351879',
-    population: '13,068,161', area_km2: '1,246,700', gdp_dallar_usd: '124 Billion')
-	TypCountry.create(id: 28,iso:  'AG', iso3: 'ATG', fips: 'AC', country: 'Antigua and Barbuda',continent: 'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-268', postal_code:'', languages:'en-AG', geonameid:'3576396',
-    population: '86,754', area_mk2: '443', gdp_dallar_usd: '1.22 Billion')
-	TypCountry.create(id: 31,iso:  'AZ', iso3: 'AZE', fips: 'AJ', country: 'Azerbaijan',continent: 'AS', currency_code:'AZN', currency_name:'Manat', phone_prefix:'994', postal_code: '^(?:AZ)*(d{4})$', languages:'az,ru,hy', geonameid:'587116',
-    population: '8,303,512', area_km2: '86,600', dgp_dollar_usd: '76.01 Billion')
-	TypCountry.create(id: 32,iso:  'AR', iso3: 'ARG', fips: 'AR', country: 'Argentina',continent: 'SA', currency_code:'ARS', currency_name:'Peso', phone_prefix:'54', postal_code: '^([A-Z]d{4}[A-Z]{3})$', languages:'es-AR,en,it,de,fr', geonameid:'3865483',
-    population: '41,343,201', area_km2: '2,766,890', gdp_dallar_usd: '484.6 Billion')
-	TypCountry.create(id: 36,iso:  'AU', iso3: 'AUS', fips: 'AS', country: 'Australia',continent: 'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'61', postal_code: '^(d{4})$', languages:'en-AU', geonameid:'2077456',
-    population: '21,515,754', area_km2: '7,686,850', gdp_dallar_usd: '1.488 Trillion')
-	TypCountry.create(id: 40,iso:  'AT', iso3: 'AUT', fips: 'AU', country: 'Austria',continent: 'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'43', postal_code: '^(d{4})$', languages:'de-AT,hr,hu,sl', geonameid:'2782113',
-    population: '8,205,00', area_km2: '83,858', gdp_dallar_usd: '417.9 Billion')
-
-                                                                                                            #The List country strating with letter B
-
-
-	TypCountry.create(id: 44,iso:  'BS', iso3: 'BHS', fips: 'BF', country: 'Bahamas',continent: 'NA', currency_code:'BSD', currency_name:'Dollar', phone_prefix:'+1-242', postal_code:'', languages:'en-BS', geonameid:'3572887',
-    population: '301,790', area_km2: '13,940', gdp_dallar_usd:  '8.373 Billion')
-	TypCountry.create(id: 48,iso:  'BH', iso3: 'BHR', fips: 'BA', country: 'Bahrain',continent: 'AS', currency_code:'BHD', currency_name:'Dinar', phone_prefix:'973', postal_code: '^(d{3}d?)$', languages:'ar-BH,en,fa,ur', geonameid:'290291',
-    population: '738,004', area_km2: '665', gdp_dallar_usd: '28.36 Billion')
-	TypCountry.create(id: 50,iso:  'BD', iso3: 'BGD', fips: 'BG', country: 'Bangladesh',continent: 'AS', currency_code:'BDT', currency_name:'Taka', phone_prefix:'880', postal_code: '^(d{4})$', languages:'bn-BD,en', geonameid:'1210997',
-    population: '156,118,464', area_km2: '144,000', gdp_dallar_usd: '140.2 Billion')
-	TypCountry.create(id: 51,iso:  'AM', iso3: 'ARM', fips: 'AM', country: 'Armenia',continent: 'AS', currency_code:'AMD', currency_name:'Dram', phone_prefix:'374', postal_code: '^(d{6})$', languages:'hy', geonameid:'174982',
-    population: '2968,000', area_km2: '29,800', gdp_dallar_usd: '10.44 Billion')
-	TypCountry.create(id: 52,iso:  'BB', iso3: 'BRB', fips: 'BB', country: 'Barbados',continent: 'NA', currency_code:'BBD', currency_name:'Dollar', phone_prefix:'+1-246', postal_code: '^(?:BB)*(d{5})$', languages:'en-BB', geonameid:'3374084',
-    population: '285,653', area_km2: '431', gdp_dallar_usd: '4.262 Billion')
-	TypCountry.create(id: 56,iso:  'BE', iso3: 'BEL', fips: 'BE', country: 'Belgium',continent: 'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'32', postal_code: '^(d{4})$', languages:'nl-BE,fr-BE,de-BE', geonameid:'2802361',
-    population: '10,403,000', area_km2: '30,510', gdp_dallar_usd: '507.4 Billion')
-	TypCountry.create(id: 60,iso:  'BM', iso3: 'BMU', fips: 'BD', country: 'Bermuda',continent: 'NA', currency_code:'BMD', currency_name:'Dollar', phone_prefix:'+1-441', postal_code: '^([A-Z]{2}d{2})$', languages:'en-BM,pt', geonameid:'3573345',
-    population: '65,365', area_km2: '53', gdp_dallar_usd: '5.6 Billion')
-	TypCountry.create(id: 64,iso:  'BT', iso3: 'BTN', fips: 'BT', country: 'Bhutan',continent: 'AS', currency_code:'BTN', currency_name:'Ngultrum', phone_prefix:'975', postal_code:'', languages:'dz', geonameid:'1252634',
-    population: '699,847', area_km2: '47,000', gdp_dallar_usd: '2.133 Billion')
-	TypCountry.create(id: 68,iso:  'BO', iso3: 'BOL', fips: 'BL', country: 'Bolivia',continent: 'SA', currency_code:'BOB', currency_name:'Boliviano', phone_prefix:'591', postal_code:'', languages:'es-BO,qu,ay', geonameid:'3923057',
-    population: '9,947,418', area_km2: '1,098,580', gdp_dallar_usd: '30.79 Billion')
-	TypCountry.create(id: 70,iso:  'BA', iso3: 'BIH', fips: 'BK', country: 'Bosnia and Herzegovina',continent: 'EU', currency_code:'BAM', currency_name:'Marka', phone_prefix:'387', postal_code: '^(d{5})$', languages:'bs,hr-BA,sr-BA', geonameid:'3277605',
-    population: '4,590,000', area_km2: '51,129', gdp_dallar_usd: '18.87 Billion')
-	TypCountry.create(id: 72,iso:  'BW', iso3: 'BWA', fips: 'BC', country: 'Botswana',continent: 'AF', currency_code:'BWP', currency_name:'Pula', phone_prefix:'267', postal_code:'', languages:'en-BW,tn-BW', geonameid:'933860',
-    population: '2,029,307', area_km2: '600,370', gdp_dallar_usd: '15.53 Billion')
-	### TypCountry.create(id: 74,iso:  'BV', iso3: 'BVT', fips: 'BV', country: 'Bouvet Island',continent: 'AN', currency_code:'NOK', currency_name:'Krone', phone_prefix:'', postal_code:'', languages:'', geonameid:'3371123',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 76,iso:  'BR', iso3: 'BRA', fips: 'BR', country: 'Brazil',continent: 'SA', currency_code:'BRL', currency_name:'Real', phone_prefix:'55', postal_code: '^(d{8})$', languages:'pt-BR,es,en,fr', geonameid:'3469034',
-    population: '201,103,330', area_km2: '8,511,965', gdp_dallar_usd: '2.19 Trillion')
-	TypCountry.create(id: 84,iso:  'BZ', iso3: 'BLZ', fips: 'BH', country: 'Belize',continent: 'NA', currency_code:'BZD', currency_name:'Dollar', phone_prefix:'501', postal_code:'', languages:'en-BZ,es', geonameid:'3582678',
-    population: '314,522', area_km2: '22,966', gdp_dallar_usd: '1.637 Billion')
-	TypCountry.create(id: 86,iso:  'IO', iso3: 'IOT', fips: 'IO', country: 'British Indian Ocean Territory',continent: 'AS', currency_code:'USD', currency_name:'Dollar', phone_prefix:'246', postal_code:'', languages:'en-IO', geonameid:'1282588',
-    population: '4,000', area_km2: '60', gdp_dallar_usd: '')
-	###TypCountry.create(id: 90,iso:  'SB', iso3: 'SLB', fips: 'BP', country: 'Solomon Islands',continent: 'OC', currency_code:'SBD', currency_name:'Dollar', phone_prefix:'677', postal_code:'', languages:'en-SB,tpi', geonameid:'2103350',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 92,iso:  'VG', iso3: 'VGB', fips: 'VI', country: 'British Virgin Islands',continent: 'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-284', postal_code:'', languages:'en-VG', geonameid:'3577718',
-    copopulation: '21,730', area_km2: '153', gdp_dallar_usd: '1.095 Billion')
-	TypCountry.create(id: 96,iso:  'BN', iso3: 'BRN', fips: 'BX', country: 'Brunei',continent: 'AS', currency_code:'BND', currency_name:'Dollar', phone_prefix:'673', postal_code: '^([A-Z]{2}d{4})$', languages:'ms-BN,en-BN', geonameid:'1820814',
-    population: '395,027', area_km2: '5,770', gdp_dallar_usd: '16.56 Billion')
-	TypCountry.create(id: 100, iso: 'BG', iso3: 'BGR', fips: 'BU',country: 'Bulgaria', continent: 'EU', currency_code:'BGN', currency_name:'Lev', phone_prefix:'359', postal_code: '^(d{4})$', languages:'bg,tr-BG', geonameid:'732800',
-    population: '7,148,785', area_km2: '110,910', gdp_dallar_usd: '53.7 Billion')
-	####TypCountry.create(id: 104, iso: 'MM', iso3: 'MMR', fips: 'BM',country: 'Myanmar', continent: 'AS', currency_code:'MMK', currency_name:'Kyat', phone_prefix:'95', postal_code: '^(d{5})$', languages:'my', geonameid:'1327865',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 108, iso: 'BI', iso3: 'BDI', fips: 'BY',country: 'Burundi', continent:'AF', currency_code:'BIF', currency_name:'Franc', phone_prefix:'257', postal_code:'', languages:'fr-BI,rn', geonameid:'433561',
-    population: '9,863,117', area_km2: '27,830', gdp_dallar_usd: '2.676 Billion')
-	TypCountry.create(id: 112, iso: 'BY', iso3: 'BLR', fips: 'BO',country: 'Belarus', continent: 'EU', currency_code:'BYR', currency_name:'Ruble', phone_prefix:'375', postal_code: '^(d{6})$', languages:'be,ru', geonameid:'630336',
-    population: '9,685,00', area_km2: '207,600', gdp_dallar_usd: '69.24 Billion')
-	TypCountry.create(id: 116, iso: 'KH', iso3: 'KHM', fips: 'CB',country: 'Cambodia', continent:'AS', currency_code:'KHR', currency_name:'Riels', phone_prefix:'855', postal_code: '^(d{5})$', languages:'km,fr,en', geonameid:'1831722',
-    population: '14,453,680', area_km2: '181,040', gdp_dallar_usd: '15.64 Billion')
-	TypCountry.create(id: 120, iso: 'CM', iso3: 'CMR', fips: 'CM',country: 'Cameroon', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'237', postal_code:'', languages:'en-CM,fr-CM', geonameid:'2233387',
-    population: '19,294,149', area_km2: '475,440', gdp_dallar_usd: '27.88 Billion')
-
-
-
-
-	TypCountry.create(id: 124, iso: 'CA', iso3: 'CAN', fips: 'CA',country: 'Canada', continent:'NA', currency_code:'CAD', currency_name:'Dollar', phone_prefix:'1', postal_code: '^([a-zA-Z]d[a-zA-Z]d[a-zA-Z]d)$', languages:'en-CA,fr-CA', gpopulation: '33,679,000', area_km2: '9,984,670', gdp_dallar_usd: '1.825 Trillion')
-	TypCountry.create(id: 132, iso: 'CV', iso3: 'CPV', fips: 'CV',country: 'Cape Verde', continent:'AF', currency_code:'CVE', currency_name:'Escudo', phone_prefix:'238', postal_code: '^(d{4})$', languages:'pt-CV', geonameid:'3374766',
-    population: '508,659', area_km2: '4,033', gdp_dallar_usd: '1.955 Billion')
-	TypCountry.create(id: 136, iso: 'KY', iso3: 'CYM', fips: 'CJ',country: 'Cayman Islands', continent:'NA', currency_code:'KYD', currency_name:'Dollar', phone_prefix:'+1-345', postal_code:'', languages:'en-KY', geonameid:'3580718',
-    population: '44,270', area_km2: '262', gdp_dallar_usd: '2.25 Billion')
-	TypCountry.create(id: 140, iso: 'CF', iso3: 'CAF', fips: 'CT',country: 'Central African Republic', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'236', postal_code:'', languages:'fr-CF,ln,kg', geonameid:'239880',
-    population: '4,844,927', area_km2: '622,984', gdp_dallar_usd: '2.05 Billion')
-	## TypCountry.create(id: 144, iso: 'LK', iso3: 'LKA', fips: 'CE',country: 'Sri Lanka', continent:'AS', currency_code:'LKR', currency_name:'Rupee', phone_prefix:'94', postal_code: '^(d{5})$', languages:'si,ta,en', geonameid:'1227603',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 148, iso: 'TD', iso3: 'TCD', fips: 'CD',country: 'Chad', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'235', postal_code:'', languages:'fr-TD,ar-TD,sre', geonameid:'2434508',
-    population: '10,543,464', area_km2: '1,284,000', gdp_dallar_usd: '13,59 Billion')
-	TypCountry.create(id: 152, iso: 'CL', iso3: 'CHL', fips: 'CI',country: 'Chile', continent:'SA', currency_code:'CLP', currency_name:'Peso', phone_prefix:'56', postal_code: '^(d{7})$', languages:'es-CL', geonameid:'3895114',
-    population: '16,746,491', area_km2: '756,950', gdp_dallar_usd: '281.7 Billion')
-	TypCountry.create(id: 156, iso: 'CN', iso3: 'CHN', fips: 'CH',country: 'China', continent:'AS', currency_code:'CNY', currency_name:'Yuan Renminbi', phone_prefix:'86', postal_code: '^(d{6})$', languages:'zh-CN,yue,wuu', geonameid:'1814991',
-    population: '1,330,044,000', area_km2: '9,596,960', gdp_dallar_usd: '9.33 Trillion')
-	### TypCountry.create(id: 158, iso: 'TW', iso3: 'TWN', fips: 'TW',country: 'Taiwan', continent:'AS', currency_code:'TWD', currency_name:'Dollar', phone_prefix:'886', postal_code: '^(d{5})$', languages:'zh-TW,zh,nan,hak', geonameid:'1668284',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 162, iso: 'CX', iso3: 'CXR', fips: 'KT',country: 'Christmas Island', continent:'AS', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'61', postal_code: '^(d{4})$', languages:'en,zh,ms-CC', geonameid:'2078138',
-    population: '1,500', area_km2: '135', gdp_dallar_usd: '0')
-	TypCountry.create(id: 166, iso: 'CC', iso3: 'CCK', fips: 'CK',country: 'Cocos Islands', continent:'AS', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'61', postal_code:'', languages:'ms-CC,en', geonameid:'1547376',
-    population: '628', area_km2: '14', gdp_dallar_usd: '0')
-	TypCountry.create(id: 170, iso: 'CO', iso3: 'COL', fips: 'CO',country: 'Colombia', continent:'SA', currency_code:'COP', currency_name:'Peso', phone_prefix:'57', postal_code:'', languages:'es-CO', geonameid:'3686110',
-    population: '47,790,000', area_km2: '1,138,910', gdp_dallar_usd: '369.2 Billion')
-	TypCountry.create(id: 174, iso: 'KM', iso3: 'COM', fips: 'CN',country: 'Comoros', continent:'AF', currency_code:'KMF', currency_name:'Franc', phone_prefix:'269', postal_code:'', languages:'ar,fr-KM', geonameid:'921929',
-    population: '773,407', area_km2: '2,170',
-    ##TypCountry.created(id: 176, iso:'', iso3: '', fips: '', country: 'Mayotte', continent:'AF', currency_code:'EUR', currency_name:'Euro', phone_prefix:'269', postal_code: '^(d{5})$', languages:'fr-YT', geonameid:'1024031',
-    population: '', area_km2: '', gdp_dallar_usd: '0')
-	## TypCountry.create(id: 178, iso: 'CG', iso3: 'COG', fips: 'CF',country: 'Republic of the Congo', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'242', postal_code:'', languages:'fr-CG,kg,ln-CG', geonameid:'2260494',
-    population: '', area_km2: '', gdp_dallar_usd: '0')
-	###TypCountry.create(id: 180, iso: 'CD', iso3: 'COD', fips: 'CG',country: 'Democratic Republic of the Congo', continent:'AF', currency_code:'CDF', currency_name:'Franc', phone_prefix:'243', postal_code:'', languages:'fr-CD,ln,kg', geonameid:'203312',
-    population: '70,916,439', area_km2: '2,345,410', gdp_dallar_usd: '18,56 Billion')
-	TypCountry.create(id: 184, iso: 'CK', iso3: 'COK', fips: 'CW',country: 'Cook Islands', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'682', postal_code:'', languages:'en-CK,mi', geonameid:'1899402',
-    population: '21,388', area_km2: '240', gdp_dallar_usd: '183.2 Million')
-	TypCountry.create(id: 188, iso: 'CR', iso3: 'CRI', fips: 'CS',country: 'Costa Rica', continent:'NA', currency_code:'CRC', currency_name:'Colon', phone_prefix:'506', postal_code: '^(d{4})$', languages:'es-CR,en', geonameid:'3624060',
-    population: '4,516,220', area_km2: '51,100', gdp_dallar_usd: '38.51 Billion')
-	TypCountry.create(id: 191, iso: 'HR', iso3: 'HRV', fips: 'HR',country: 'Croatia', continent:'EU', currency_code:'HRK', currency_name:'Kuna', phone_prefix:'385', postal_code: '^(?:HR)*(d{5})$', languages:'hr-HR,sr', geonameid:'3202326',
-    population: '4,491,000', area_km2: '56,542', gdp_dallar_usd: '59.14 Billion')
-	## TypCountry.create(id: 192, iso: 'CU', iso3: 'CUB', fips: 'CU',country: 'Cuba', continent:'NA', currency_code:'CUP', currency_name:'Peso', phone_prefix:'53', postal_code: '^(?:CP)*(d{5})$', languages:'es-CU', gpopulation: '11,423,000', area_km2: '110,860', gdp_dallar_usd: '72.3 Billion',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	### TypCountry.create(id: 196, iso: 'CY', iso3: 'CYP', fips: 'CY',country: 'Cyprus', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'357', postal_code: '^(d{4})$', languages:'el-CY,tr-CY,en', geonameid:'146669',
-    population: '1,102,677', area_km2: '9,250', gdp_dallar_usd: '21.78 Billion')
-	TypCountry.create(id: 203, iso: 'CZ', iso3: 'CZE', fips: 'EZ',country: 'Czech Republic', continent:'EU', currency_code:'CZK', currency_name:'Koruna', phone_prefix:'420', postal_code: '^(d{5})$', languages:'cs,sk', geonameid:'3077311',
-    population: '10,476,000', area_km2: '78,866', gdp_dallar_usd: '194.8 Billion')
-
-
-
-
-	TypCountry.create(id: 204, iso: 'BJ', iso3: 'BEN', fips: 'BN',country: 'Benin', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'229', postal_code:'', languages:'fr-BJ', geonameid:'2395170',
-    population: '9,056,010', area_km2: '112,620', gdp_dallar_usd: '8.359 Billion')
-
-
-	TypCountry.create(id: 208, iso: 'DK', iso3: 'DNK', fips: 'DA',country: 'Denmark', continent:'EU', currency_code:'DKK', currency_name:'Krone', phone_prefix:'45', postal_code: '^(d{4})$', languages:'da-DK,en,fo,de-DK', geonameid:'2623032',
-    population: '5,484,000', area_km2: '43,094', gdp_dallar_usd: '324.3 Billion')
-	TypCountry.create(id: 212, iso: 'DM', iso3: 'DMA', fips: 'DO',country: 'Dominica', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-767', postal_code:'', languages:'en-DM', geonameid:'3575830',
-    population: '72,813', area_km2: '754', gdp_dallar_usd: '495 Million')
-	TypCountry.create(id: 214, iso: 'DO', iso3: 'DOM', fips: 'DR',country: 'Dominican Republic', continent:'NA', currency_code:'DOP', currency_name:'Peso', phone_prefix:'+1-809 and 1-829', postal_code: '^(d{5})$', languages:'es-DO', geonameid:'3508796',
-    population: '9,823,821', area_km2: '48,730', gdp_dallar_usd: '59.27 Billion')
-
-                    #east Timor, egypt, el salvador, equatorail guinea, has not yet seen
-
-	TypCountry.create(id: 218, iso: 'EC', iso3: 'ECU', fips: 'EC',country: 'Ecuador', continent:'SA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'593', postal_code: '^([a-zA-Z]d{4}[a-zA-Z])$', languages:'es-EC', geonameid:'3658394',
-    population: '14,790,608', area_km2: '283,560', gdp_dallar_usd: '91.41 Billion')
-	TypCountry.create(id: 222, iso: 'SV', iso3: 'SLV', fips: 'ES',country: 'El Salvador', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'503', postal_code: '^(?:CP)*(d{4})$', languages:'es-SV', geonameid:'3585968',
-    population:  '6,052,064', area_km2: '21,040', gdp_dallar_usd: '24.67 Billion')
-	TypCountry.create(id: 226, iso: 'GQ', iso3: 'GNQ', fips: 'EK',country: 'Equatorial Guinea', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'240', postal_code:'', languages:'es-GQ,fr', geonameid:'2309096',
-    population:  '1,014,999', area_km2: '28,051', gdp_dallar_usd: '17.08 Billion')
-	TypCountry.create(id: 231, iso: 'ET', iso3: 'ETH', fips: 'ET',country: 'Ethiopia', continent:'AF', currency_code:'ETB', currency_name:'Birr', phone_prefix:'251', postal_code: '^(d{4})$', languages:'am,en-ET,om-ET,ti-ET,so-ET,sid', geonameid:'337996',
-    population:  '88,013,491', area_km2: '1,127,127', gdp_dallar_usd: '47.34 Billion')
-	TypCountry.create(id: 232, iso: 'ER', iso3: 'ERI', fips: 'ER',country: 'Eritrea', continent:'AF', currency_code:'ERN', currency_name:'Nakfa', phone_prefix:'291', postal_code:'', languages:'aa-ER,ar,tig,kun,ti-ER', geonameid:'338010',
-    population:  '5,792,984', area_km2: '121,320', gdp_dallar_usd: '3,438 Billion')
-	TypCountry.create(id: 233, iso: 'EE', iso3: 'EST', fips: 'EN',country: 'Estonia', continent:'EU', currency_code:'EEK', currency_name:'Kroon', phone_prefix:'372', postal_code: '^(d{5})$', languages:'et,ru', geonameid:'453733',
-    population:  '1,291,170', area_km2: '45,226', gdp_dallar_usd: '24,28 Billion')
-
-
-
-	TypCountry.create(id: 234, iso: 'FO', iso3: 'FRO', fips: 'FO',country: 'Faroe Islands', continent:'EU', currency_code:'DKK', currency_name:'Krone', phone_prefix:'298', postal_code: '^(?:FO)*(d{3})$', languages:'fo,da-FO', geonameid:'2622320',
-    population:  '48,228', area_km2: '1,399', gdp_dallar_usd: '2.32 Billion')
-	TypCountry.create(id: 238, iso: 'FK', iso3: 'FLK', fips: 'FK',country: 'Falkland Islands', continent:'SA', currency_code:'FKP', currency_name:'Pound', phone_prefix:'500', postal_code:'', languages:'en-FK', geonameid:'3474414',
-    population:  '2,638', area_km2: '12,173', gdp_dallar_usd: '164.5 Million')
-	### TypCountry.create(id: 239, iso: 'GS', iso3: 'SGS', fips: 'SX',country: 'South Georgia and the South Sandwich Islands', continent:'AN', currency_code:'GBP', currency_name:'Pound', phone_prefix:'', postal_code:'', languages:'en', geonameid:'3474415',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 242, iso: 'FJ', iso3: 'FJI', fips: 'FJ',country: 'Fiji', continent:'OC', currency_code:'FJD', currency_name:'Dollar', phone_prefix:'679', postal_code:'', languages:'en-FJ,fj', geonameid:'2205218',
-    population: '875,983', area_km2: '18,270', gdp_dallar_usd: '4.218 Billion')
-	TypCountry.create(id: 246, iso: 'FI', iso3: 'FIN', fips: 'FI',country: 'Finland', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'358', postal_code: '^(?:FI)*(d{5})$', languages:'fi-FI,sv-FI,smn', geonameid:'660013',
-    population: '5,224,000', area_km2: '337,030', gdp_dallar_usd: '259.6 Billion')
-	### TypCountry.create(id: 248, iso: 'AX', iso3: 'ALA', fips: '',country: 'Aland Islands', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'+358-18', postal_code:'', languages:'sv-AX', geonameid:'661882',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 250, iso: 'FR', iso3: 'FRA', fips: 'FR',country: 'France', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'33', postal_code: '^(d{5})$', languages:'fr-FR,frp,br,co,ca,eu', geonameid:'3017382',
-    population: '64,768,389', area_km2: '547,030', gdp_dallar_usd: '2.739 Trillion')
-	### TypCountry.create(id: 254, iso: 'GF', iso3: 'GUF', fips: 'FG',country: 'French Guiana', continent:'SA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'594', postal_code: '^((97)|(98)3d{2})$', languages:'fr-GF', geonameid:'3381670',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 258, iso: 'PF', iso3: 'PYF', fips: 'FP',country: 'French Polynesia', continent:'OC', currency_code:'XPF', currency_name:'Franc', phone_prefix:'689', postal_code: '^((97)|(98)7d{2})$', languages:'fr-PF,ty', geonameid:'4020092',
-    population: '270,485', area_km2: '4,167', gdp_dallar_usd: '5.65 Billion')
-	### TypCountry.create(id: 260, iso: 'TF', iso3: 'ATF', fips: 'FS',country: 'French Southern Territories', continent:'AN', currency_code:'EUR', currency_name:'Euro  ', phone_prefix:'', postal_code:'', languages:'fr', geonameid:'1546748',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	## TypCountry.create(id: 262, iso: 'DJ', iso3: 'DJI', fips: 'DJ',country: 'Djibouti', continent:'AF', currency_code:'DJF', currency_name:'Franc', phone_prefix:'253', postal_code:'', languages:'fr-DJ,ar,so-DJ,aa', geonameid:'223816',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-
-
-
-	TypCountry.create(id: 266, iso: 'GA', iso3: 'GAB', fips: 'GB',country: 'Gabon', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'241', postal_code:'', languages:'fr-GA', geonameid:'2400553',
-    population: '1,545,255', area_km2: '267,667', gdp_dallar_usd: '19.97 Billion')
-	TypCountry.create(id: 268, iso: 'GE', iso3: 'GEO', fips: 'GG',country: 'Georgia', continent:'AS', currency_code:'GEL', currency_name:'Lari', phone_prefix:'995', postal_code: '^(d{4})$', languages:'ka,ru,hy,az', geonameid:'614540',
-    population: '4,630,000', area_km2: '69,700', gdp_dallar_usd: '15.95 Billion')
-	TypCountry.create(id: 270, iso: 'GM', iso3: 'GMB', fips: 'GA',country: 'Gambia', continent:'AF', currency_code:'GMD', currency_name:'Dalasi', phone_prefix:'220', postal_code:'', languages:'en-GM,mnk,wof,wo,ff', geonameid:'2413451',
-    population: '1,593,256', area_km2: '11,300', gdp_dallar_usd: '896 Million')
-	### TypCountry.create(id: 275, iso: 'PS', iso3: 'PSE', fips: 'WE',country: 'Palestinian Territory', continent:'AS', currency_code:'ILS', currency_name:'Shekel', phone_prefix:'970', postal_code:'', languages:'ar-PS', geonameid:'6254930',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 276, iso: 'DE', iso3: 'DEU', fips: 'GM',country: 'Germany', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'49', postal_code: '^(d{5})$', languages:'de', geonameid:'2921044',
-    population: '81,802,257', area_km2: '357,021', gdp_dallar_usd: '3.593 Trillion')
-	TypCountry.create(id: 288, iso: 'GH', iso3: 'GHA', fips: 'GH',country: 'Ghana', continent:'AF', currency_code:'GHS', currency_name:'Cedi', phone_prefix:'233', postal_code:'', languages:'en-GH,ak,ee,tw', geonameid:'2300660',
-    population: '24,339,838', area_km2: '239,460', gdp_dallar_usd: '45.55 Billion')
-	TypCountry.create(id: 292, iso: 'GI', iso3: 'GIB', fips: 'GI',country: 'Gibraltar', continent:'EU', currency_code:'GIP', currency_name:'Pound', phone_prefix:'350', postal_code:'', languages:'en-GI,es,it,pt', geonameid:'2411586',
-    population: '27,884', area_km2: '7', gdp_dallar_usd: '1.106 Billion')
-	## TypCountry.create(id: 296, iso: 'KI', iso3: 'KIR', fips: 'KR',country: 'Kiribati', continent:'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'686', postal_code:'', languages:'en-KI,gil', geonameid:'4030945',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 300, iso: 'GR', iso3: 'GRC', fips: 'GR',country: 'Greece', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'30', postal_code: '^(d{5})$', languages:'el-GR,en,fr', geonameid:'390903',
-    population: '11,000,000', area_km2: '131,940', gdp_dallar_usd: '243.3 Billion')
-	TypCountry.create(id: 304, iso: 'GL', iso3: 'GRL', fips: 'GL',country: 'Greenland', continent:'NA', currency_code:'DKK', currency_name:'Krone', phone_prefix:'299', postal_code: '^(d{4})$', languages:'kl,da-GL,en', geonameid:'3425505',
-    population: '56,375', area_km2: '2,166,086', gdp_dallar_usd: '2.16 Billion')
-	TypCountry.create(id: 308, iso: 'GD', iso3: 'GRD', fips: 'GJ',country: 'Grenada', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-473', postal_code:'', languages:'en-GD', geonameid:'3580239',
-    population: '107,818', area_km2: '344', gdp_dallar_usd: '811 Million')
-	### TypCountry.create(id: 312, iso: 'GP', iso3: 'GLP', fips: 'GP',country: 'Guadeloupe', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'590', postal_code: '^((97)|(98)d{3})$', languages:'fr-GP', geonameid:'3579143',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 316, iso: 'GU', iso3: 'GUM', fips: 'GQ',country: 'Guam', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-671', postal_code: '^(969d{2})$', languages:'en-GU,ch-GU', geonameid:'4043988',
-    population: '159,358', area_km2: '549', gdp_dallar_usd: '4.6 Billion')
-	TypCountry.create(id: 320, iso: 'GT', iso3: 'GTM', fips: 'GT',country: 'Guatemala', continent:'NA', currency_code:'GTQ', currency_name:'Quetzal', phone_prefix:'502', postal_code: '^(d{5})$', languages:'es-GT', geonameid:'3595528',
-    population: '13,550,440', area_km2: '108,890', gdp_dallar_usd: '53.9 Billion')
-	TypCountry.create(id: 324, iso: 'GN', iso3: 'GIN', fips: 'GV',country: 'Guinea', continent:'AF', currency_code:'GNF', currency_name:'Franc', phone_prefix:'224', postal_code:'', languages:'fr-GN', geonameid:'2420477',
-    population: '10,324,025', area_km2: '245,857', gdp_dallar_usd: '6.544 Billion')
-	TypCountry.create(id: 328, iso: 'GY', iso3: 'GUY', fips: 'GY',country: 'Guyana', continent:'SA', currency_code:'GYD', currency_name:'Dollar', phone_prefix:'592', postal_code:'', languages:'en-GY', geonameid:'3378535',
-    population: '748,486', area_km2: '214,970', gdp_dallar_usd: '214,970')
-
-
-
-	TypCountry.create(id: 332, iso: 'HT', iso3: 'HTI', fips: 'HA',country: 'Haiti', continent:'NA', currency_code:'HTG', currency_name:'Gourde', phone_prefix:'509', postal_code: '^(?:HT)*(d{4})$', languages:'ht,fr-HT', geonameid:'3723988',
-    population: '9,648,924', area_km2: '27,750', gdp_dallar_usd: '8.287 Billion')
-	TypCountry.create(id: 334, iso: 'HM', iso3: 'HMD', fips: 'HM',country: 'Heard Island and McDonald Islands', continent:'AN', currency_code:'AUD', currency_name:'Dollar', phone_prefix:' ', postal_code:'', languages:'', geonameid:'1547314',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	## TypCountry.create(id: 336, iso: 'VA', iso3: 'VAT', fips: 'VT',country: 'Vatican', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'379', postal_code:'', languages:'la,it,fr', geonameid:'3164670',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 340, iso: 'HN', iso3: 'HND', fips: 'HO',country: 'Honduras', continent:'NA', currency_code:'HNL', currency_name:'Lempira', phone_prefix:'504', postal_code: '^([A-Z]{2}d{4})$', languages:'es-HN', geonameid:'3608932',
-    population: '7,989,415', area_km2: '112,090	', gdp_dallar_usd: '18.88 Billion')
-	TypCountry.create(id: 344, iso: 'HK', iso3: 'HKG', fips: 'HK',country: 'Hong Kong', continent:'AS', currency_code:'HKD', currency_name:'Dollar', phone_prefix:'852', postal_code:'', languages:'zh-HK,yue,zh,en', geonameid:'1819730',
-    population: '6,898,686', area_km2: '1,092', gdp_dallar_usd: '272.1 Billion')
-	TypCountry.create(id: 348, iso: 'HU', iso3: 'HUN', fips: 'HU',country: 'Hungary', continent:'EU', currency_code:'HUF', currency_name:'Forint', phone_prefix:'36', postal_code: '^(d{4})$', languages:'hu-HU', geonameid:'719819',
-    population: '9,982,000', area_km2: '93,030', gdp_dallar_usd: '93,030')
-
-
-
-	TypCountry.create(id: 352, iso: 'IS', iso3: 'ISL', fips: 'IC',country: 'Iceland', continent:'EU', currency_code:'ISK', currency_name:'Krona', phone_prefix:'354', postal_code: '^(d{3})$', languages:'is,en,de,da,sv,no', geonameid:'2629691',
-    population: '308,910', area_km2: '103,000', gdp_dallar_usd: '14.59 Billion')
-	TypCountry.create(id: 356, iso: 'IN', iso3: 'IND', fips: 'IN',country: 'India', continent:'AS', currency_code:'INR', currency_name:'Rupee', phone_prefix:'91', postal_code: '^(d{6})$', languages:'en-IN,hi,bn,te,mr,ta,ur,gu,ml,kn,or,pa,as,ks,', geonameid:'1269750',
-    population: '1,173,108,018', area_km2: '3,287,590', gdp_dallar_usd: '1.67 Trillion')
-	TypCountry.create(id: 360, iso: 'ID', iso3: 'IDN', fips: 'ID',country: 'Indonesia', continent:'AS', currency_code:'IDR', currency_name:'Rupiah', phone_prefix:'62', postal_code: '^(d{5})$', languages:'id,en,nl,jv', geonameid:'1643084',
-    population: '242,968,342', area_km2: '1,919,440', gdp_dallar_usd: '867.5 Billion')
-	TypCountry.create(id: 364, iso: 'IR', iso3: 'IRN', fips: 'IR',country: 'Iran', continent:'AS', currency_code:'IRR', currency_name:'Rial', phone_prefix:'98', postal_code: '^(d{10})$', languages:'fa-IR,ku', geonameid:'130758',
-    population: '76,923,300', area_km2: '1,648,000', gdp_dallar_usd: '411.9 Billion')
-	TypCountry.create(id: 368, iso: 'IQ', iso3: 'IRQ', fips: 'IZ',country: 'Iraq', continent:'AS', currency_code:'IQD', currency_name:'Dinar', phone_prefix:'964', postal_code: '^(d{5})$', languages:'ar-IQ,ku,hy', geonameid:'99237',
-    population: '29,671,605', area_km2: '437,072', gdp_dallar_usd: '221.8 Billion')
-	TypCountry.create(id: 372, iso: 'IE', iso3: 'IRL', fips: 'EI',country: 'Ireland', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'353', postal_code:'', languages:'en-IE,ga-IE', geonameid:'2963597',
-    population: '4,622,917', area_km2: '70,280', gdp_dallar_usd: '220.9 Billion')
-	TypCountry.create(id: 376, iso: 'IL', iso3: 'ISR', fips: 'IS',country: 'Israel', continent:'AS', currency_code:'ILS', currency_name:'Shekel', phone_prefix:'972', postal_code: '^(d{5})$', languages:'he,ar-IL,en-IL,', geonameid:'294640',
-    population: '7,353,985', area_km2: '20,770', gdp_dallar_usd: '272.7 Billion')
-	TypCountry.create(id: 380, iso: 'IT', iso3: 'ITA', fips: 'IT',country: 'Italy', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'39', postal_code: '^(d{5})$', languages:'it-IT,de-IT,fr-IT,sl', geonameid:'3175395',
-    population: '60,340,328', area_km2: '301,230', gdp_dallar_usd: '2.068 Trillion')
-	TypCountry.create(id: 384, iso: 'CI', iso3: 'CIV', fips: 'IV',country: 'Ivory Coast', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'225', postal_code:'', languages:'fr-CI', geonameid:'2287781',
-    population: '21,058,798', area_km2: '322,460', gdp_dallar_usd: '28.28 Billion')
-
-
-
-
-	TypCountry.create(id: 388, iso: 'JM', iso3: 'JAM', fips: 'JM',country: 'Jamaica', continent:'NA', currency_code:'JMD', currency_name:'Dollar', phone_prefix:'+1-876', postal_code:'', languages:'en-JM', geonameid:'3489940',
-    population: '2,847,232', area_km2: '10,991', gdp_dallar_usd: '14.39 Billion')
-	TypCountry.create(id: 392, iso: 'JP', iso3: 'JPN', fips: 'JA',country: 'Japan', continent:'AS', currency_code:'JPY', currency_name:'Yen', phone_prefix:'81', postal_code: '^(d{7})$', languages:'ja', geonameid:'1861060',
-    population: '127,288,000', area_km2: '	377,835', gdp_dallar_usd: '5.007 Trillion')
-
-
-	TypCountry.create(id: 398, iso: 'KZ', iso3: 'KAZ', fips: 'KZ',country: 'Kazakhstan', continent:'AS', currency_code:'KZT', currency_name:'Tenge', phone_prefix:'7', postal_code: '^(d{6})$', languages:'kk,ru', geonameid:'1522867',
-    population: '15,340,000', area_km2: '2,717,300', gdp_dallar_usd: '224.9 Billion')
-	### TypCountry.create(id: 400, iso: 'JO', iso3: 'JOR', fips: 'JO',country: 'Jordan', continent:'AS', currency_code:'JOD', currency_name:'Dinar', phone_prefix:'962', postal_code: '^(d{5})$', languages:'ar-JO,en', geonameid:'248816',
-    population: '6,407,085', area_km2: '92,300', gdp_dallar_usd: '34.08 Billion')
-	TypCountry.create(id: 404, iso: 'KE', iso3: 'KEN', fips: 'KE',country: 'Kenya', continent:'AF', currency_code:'KES', currency_name:'Shilling', phone_prefix:'254', postal_code: '^(d{5})$', languages:'en-KE,sw-KE', geonameid:'192950',
-    population: '40,046,566', area_km2: '582,650', gdp_dallar_usd: '45.31 Billion')
-	### TypCountry.create(id: 408, iso: 'KP', iso3: 'PRK', fips: 'KN',country: 'North Korea', continent:'AS', currency_code:'KPW', currency_name:'Won', phone_prefix:'850', postal_code: '^(d{6})$', languages:'ko-KP', geonameid:'1873107',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	### TypCountry.create(id: 410, iso: 'KR', iso3: 'KOR', fips: 'KS',country: 'South Korea', continent:'AS', currency_code:'KRW', currency_name:'Won', phone_prefix:'82', postal_code: '^(?:SEOUL)*(d{6})$', languages:'ko-KR,en', geonameid:'1835841',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 414, iso: 'KW', iso3: 'KWT', fips: 'KU',country: 'Kuwait', continent:'AS', currency_code:'KWD', currency_name:'Dinar', phone_prefix:'965', postal_code: '^(d{5})$', languages:'ar-KW,en', geonameid:'285570',
-    population: '2,789,132', area_km2: '17,820', gdp_dallar_usd: '179.5 Billion')
-	TypCountry.create(id: 417, iso: 'KG', iso3: 'KGZ', fips: 'KG',country: 'Kyrgyzstan', continent:'AS', currency_code:'KGS', currency_name:'Som', phone_prefix:'996', postal_code: '^(d{6})$', languages:'ky,uz,ru', geonameid:'1527747',
-    population: '5,508,626', area_km2: '198,500', gdp_dallar_usd: '7.234 Billion')
-
-
-
-
-
-	TypCountry.create(id: 418, iso: 'LA', iso3: 'LAO', fips: 'LA',country: 'Laos', continent:'AS', currency_code:'LAK', currency_name:'Kip', phone_prefix:'856', postal_code: '^(d{5})$', languages:'lo,fr,en', geonameid:'1655842',
-    population: '6,368,162', area_km2: '236,800', gdp_dallar_usd: '10.1 Billion')
-	TypCountry.create(id: 422, iso: 'LB', iso3: 'LBN', fips: 'LE',country: 'Lebanon', continent:'AS', currency_code:'LBP', currency_name:'Pound', phone_prefix:'961', postal_code: '^(d{4}(d{4})?)$', languages:'ar-LB,fr-LB,en,hy', geonameid:'272103',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 426, iso: 'LS', iso3: 'LSO', fips: 'LT',country: 'Lesotho', continent:'AF', currency_code:'LSL', currency_name:'Loti', phone_prefix:'266', postal_code: '^(d{3})$', languages:'en-LS,st,zu,xh', geonameid:'932692',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 428, iso: 'LV', iso3: 'LVA', fips: 'LG',country: 'Latvia', continent:'EU', currency_code:'LVL', currency_name:'Lat', phone_prefix:'371', postal_code: '^(?:LV)*(d{4})$', languages:'lv,ru,lt', geonameid:'458258',
-    population: '2,217,969', area_km2: '64,589', gdp_dallar_usd: '30.38 Billion')
-	TypCountry.create(id: 430, iso: 'LR', iso3: 'LBR', fips: 'LI',country: 'Liberia', continent:'AF', currency_code:'LRD', currency_name:'Dollar', phone_prefix:'231', postal_code: '^(d{4})$', languages:'en-LR', geonameid:'2275384',
-    population: '3,685,076', area_km2: '111,370', gdp_dallar_usd: '1.977 Billion')
-	TypCountry.create(id: 434, iso: 'LY', iso3: 'LBY', fips: 'LY',country: 'Libya', continent:'AF', currency_code:'LYD', currency_name:'Dinar', phone_prefix:'218', postal_code:'', languages:'ar-LY,it,en', geonameid:'2215636',
-    population: '6,461,454', area_km2: '1,759,540', gdp_dallar_usd: '70.92 Billion')
-	TypCountry.create(id: 438, iso: 'LI', iso3: 'LIE', fips: 'LS',country: 'Liechtenstein', continent:'EU', currency_code:'CHF', currency_name:'Franc', phone_prefix:'423', postal_code: '^(d{4})$', languages:'de-LI', geonameid:'3042058',
-    population: '35,000', area_km2: '160', gdp_dallar_usd: '5.113 Billion')
-	TypCountry.create(id: 440, iso: 'LT', iso3: 'LTU', fips: 'LH',country: 'Lithuania', continent:'EU', currency_code:'LTL', currency_name:'Litas', phone_prefix:'370', postal_code: '^(?:LT)*(d{5})$', languages:'lt,ru,pl', geonameid:'597427',
-    population: '2,944,459', area_km2: '65,200', gdp_dallar_usd: '46.71 Billion')
-	TypCountry.create(id: 442, iso: 'LU', iso3: 'LUX', fips: 'LU',country: 'Luxembourg', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'352', postal_code: '^(d{4})$', languages:'lb,de-LU,fr-LU', geonameid:'2960313',
-    population: '497,538', area_km2: '2,586', gdp_dallar_usd: '60.54 Billion')
-
-
-
-	TypCountry.create(id: 446, iso: 'MO', iso3: 'MAC', fips: 'MC',country: 'Macau', continent:'AS', currency_code:'MOP', currency_name:'Pataca', phone_prefix:'853', postal_code:'', languages:'zh,zh-MO', geonameid:'1821275',
-    population: '449,198', area_km2: '254', gdp_dallar_usd: '51.68 Billion')
-	TypCountry.create(id: 450, iso: 'MG', iso3: 'MDG', fips: 'MA',country: 'Madagascar', continent:'AF', currency_code:'MGA', currency_name:'Ariary', phone_prefix:'261', postal_code: '^(d{3})$', languages:'fr-MG,mg', geonameid:'1062947',
-    population: '21,281,844', area_km2: '587,040', gdp_dallar_usd: '10.53 Billion')
-	TypCountry.create(id: 454, iso: 'MW', iso3: 'MWI', fips: 'MI',country: 'Malawi', continent:'AF', currency_code:'MWK', currency_name:'Kwacha', phone_prefix:'265', postal_code:'', languages:'ny,yao,tum,swk', geonameid:'927384',
-    population: '15,447,500', area_km2: '118,480', gdp_dallar_usd: '3.683 Billion')
-	TypCountry.create(id: 458, iso: 'MY', iso3: 'MYS', fips: 'MY',country: 'Malaysia', continent:'AS', currency_code:'MYR', currency_name:'Ringgit', phone_prefix:'60', postal_code: '^(d{5})$', languages:'ms-MY,en,zh,ta,te,ml,pa,th', geonameid:'1733045',
-    population: '28,274,729', area_km2: '329,750', gdp_dallar_usd: '312.4 Billion')
-	TypCountry.create(id: 462, iso: 'MV', iso3: 'MDV', fips: 'MV',country: 'Maldives', continent:'AS', currency_code:'MVR', currency_name:'Rufiyaa', phone_prefix:'960', postal_code: '^(d{5})$', languages:'dv,en', geonameid:'1282028',
-    population: '395,650', area_km2: '300', gdp_dallar_usd: '2.27 Billion')
-	TypCountry.create(id: 466, iso: 'ML', iso3: 'MLI', fips: 'ML',country: 'Mali', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'223', postal_code:'', languages:'fr-ML,bm', geonameid:'2453866',
-    population: '13,796,354', area_km2: '1,240,000', gdp_dallar_usd: '11.37 Billion')
-	TypCountry.create(id: 470, iso: 'MT', iso3: 'MLT', fips: 'MT',country: 'Malta', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'356', postal_code: '^([A-Z]{3}d{2}d?)$', languages:'mt,en-MT', geonameid:'2562770',
-    population: '403,000', area_km2: '316', gdp_dallar_usd: '9.541 Billion')
-	### TypCountry.create(id: 474, iso: 'MQ', iso3: 'MTQ', fips: 'MB',country: 'Martinique', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'596', postal_code: '^(d{5})$', languages:'fr-MQ', geonameid:'3570311',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 478, iso: 'MR', iso3: 'MRT', fips: 'MR',country: 'Mauritania', continent:'AF', currency_code:'MRO', currency_name:'Ouguiya', phone_prefix:'222', postal_code:'', languages:'ar-MR,fuc,snk,fr,mey,wo', geonameid:'2378080',
-    population: '3,205,060', area_km2: '1,030,700', gdp_dallar_usd: '4.183 Billion')
-	TypCountry.create(id: 480, iso: 'MU', iso3: 'MUS', fips: 'MP',country: 'Mauritius', continent:'AF', currency_code:'MUR', currency_name:'Rupee', phone_prefix:'230', postal_code:'', languages:'en-MU,bho,fr', geonameid:'934292',
-    population: '1,294,104', area_km2: '2,040', gdp_dallar_usd: '11.9 Billion')
-	TypCountry.create(id: 484, iso: 'MX', iso3: 'MEX', fips: 'MX',country: 'Mexico', continent:'NA', currency_code:'MXN', currency_name:'Peso', phone_prefix:'52', postal_code: '^(d{5})$', languages:'es-MX', geonameid:'3996063',
-    population: '112,468,855', area_km2: '1,972,550', gdp_dallar_usd: '1.327 Trillion')
-	TypCountry.create(id: 492, iso: 'MC', iso3: 'MCO', fips: 'MN',country: 'Monaco', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'377', postal_code: '^(d{5})$', languages:'fr-MC,en,it', geonameid:'2993457',
-    population: '32,965', area_km2: '2', gdp_dallar_usd: '5.748 Billion')
-	TypCountry.create(id: 496, iso: 'MN', iso3: 'MNG', fips: 'MG',country: 'Mongolia', continent:'AS', currency_code:'MNT', currency_name:'Tugrik', phone_prefix:'976', postal_code: '^(d{6})$', languages:'mn,ru', geonameid:'2029969',
-    population: '3,086,918', area_km2: '1,565,000', gdp_dallar_usd: '11.14 Billion')
-	TypCountry.create(id: 498, iso: 'MD', iso3: 'MDA', fips: 'MD',country: 'Moldova', continent:'EU', currency_code:'MDL', currency_name:'Leu', phone_prefix:'373', postal_code: '^(?:MD)*(d{4})$', languages:'ro,ru,gag,tr', geonameid:'617790',
-    population: '4,324,000', area_km2: '33,843', gdp_dallar_usd: '7.932 Billion')
-	TypCountry.create(id: 499, iso: 'ME', iso3: 'MNE', fips: 'MJ',country: 'Montenegro', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'381', postal_code: '^(d{5})$', languages:'sr,hu,bs,sq,hr,rom', geonameid:'3194884',
-    population: '666,730', area_km2: '14,026', gdp_dallar_usd: '4.518 Billion')
-	TypCountry.create(id: 500, iso: 'MS', iso3: 'MSR', fips: 'MH',country: 'Montserrat', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-664', postal_code:'', languages:'en-MS', geonameid:'3578097',
-    population: '9,341', area_km2: '102', gdp_dallar_usd: '')
-	TypCountry.create(id: 504, iso: 'MA', iso3: 'MAR', fips: 'MO',country: 'Morocco', continent:'AF', currency_code:'MAD', currency_name:'Dirham', phone_prefix:'212', postal_code: '^(d{5})$', languages:'ar-MA,fr', geonameid:'2542007',
-    population: '31,627,428', area_km2: '446,550', gdp_dallar_usd: '104.8 Billion')
-	TypCountry.create(id: 508, iso: 'MZ', iso3: 'MOZ', fips: 'MZ',country: 'Mozambique', continent:'AF', currency_code:'MZN', currency_name:'Meticail', phone_prefix:'258', postal_code: '^(d{4})$', languages:'pt-MZ,vmw', geonameid:'1036973',
-    population: '22,061,451', area_km2: '801,590', gdp_dallar_usd: '14.67 Billion')
-
-
-	### TypCountry.create(id: 512, iso: 'OM', iso3: 'OMN', fips: 'MU',country: 'Oman', continent:'AS', currency_code:'OMR', currency_name:'Rial', phone_prefix:'968', postal_code: '^(d{3})$', languages:'ar-OM,en,bal,ur', geonameid:'286963',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 516, iso: 'NA', iso3: 'NAM', fips: 'WA',country: 'Namibia', continent:'AF', currency_code:'NAD', currency_name:'Dollar', phone_prefix:'264', postal_code:'', languages:'en-NA,af,de,hz,naq', geonameid:'3355338',
-    population: '2,128,471', area_km2: '825,418', gdp_dallar_usd: '12.3 Billion')
-	TypCountry.create(id: 520, iso: 'NR', iso3: 'NRU', fips: 'NR',country: 'Nauru', continent:'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'674', postal_code:'', languages:'na,en-NR', geonameid:'2110425',
-    population: '10,065', area_km2: '21', gdp_dallar_usd: '')
-	TypCountry.create(id: 524, iso: 'NP', iso3: 'NPL', fips: 'NP',country: 'Nepal', continent:'AS', currency_code:'NPR', currency_name:'Rupee', phone_prefix:'977', postal_code: '^(d{5})$', languages:'ne,en', geonameid:'1282988',
-    population: '28,951,852', area_km2: '140,800', gdp_dallar_usd: '19.34 Billion')
-	TypCountry.create(id: 528, iso: 'NL', iso3: 'NLD', fips: 'NL',country: 'Netherlands', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'31', postal_code: '^(d{4}[A-Z]{2})$', languages:'nl-NL,fy-NL', geonameid:'2750405',
-    population: '16,645,000', area_km2: '41,526', gdp_dallar_usd: '722.3 Billion')
-	TypCountry.create(id: 530, iso: 'AN', iso3: 'ANT', fips: 'NT',country: 'Netherlands Antilles', continent:'NA', currency_code:'ANG', currency_name:'Guilder', phone_prefix:'599', postal_code:'', languages:'nl-AN,en,es', geonameid:'3513447',
-    population: '136,197', area_km2: '960', gdp_dallar_usd: '')
-	### TypCountry.create(id: 533, iso: 'AW', iso3: 'ABW', fips: 'AA',country: 'Aruba', continent:'NA', currency_code:'AWG', currency_name:'Guilder', phone_prefix:'297', postal_code:'', languages:'nl-AW,es,en', geonameid:'3577279',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 540, iso: 'NC', iso3: 'NCL', fips: 'NC',country: 'New Caledonia', continent:'OC', currency_code:'XPF', currency_name:'Franc', phone_prefix:'687', postal_code: '^(d{5})$', languages:'fr-NC', geonameid:'2139685',
-    population: '216,494', area_km2: '19,060', gdp_dallar_usd: '9.28 Billion')
-	### TypCountry.create(id: 548, iso: 'VU', iso3: 'VUT', fips: 'NH',country: 'Vanuatu', continent:'OC', currency_code:'VUV', currency_name:'Vatu', phone_prefix:'678', postal_code:'', languages:'bi,en-VU,fr-VU', geonameid:'2134431',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 554, iso: 'NZ', iso3: 'NZL', fips: 'NZ',country: 'New Zealand', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'64', postal_code: '^(d{4})$', languages:'en-NZ,mi', geonameid:'2186224',
-    population: '4,252,277', area_km2: '268,680', gdp_dallar_usd: '181.1 Billion')
-	TypCountry.create(id: 558, iso: 'NI', iso3: 'NIC', fips: 'NU',country: 'Nicaragua', continent:'NA', currency_code:'NIO', currency_name:'Cordoba', phone_prefix:'505', postal_code: '^(d{7})$', languages:'es-NI,en', geonameid:'3617476',
-    population: '5,995,928', area_km2: '129,494', gdp_dallar_usd: '11.26 Billion')
-	TypCountry.create(id: 562, iso: 'NE', iso3: 'NER', fips: 'NG',country: 'Niger', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'227', postal_code: '^(d{4})$', languages:'fr-NE,ha,kr,dje', geonameid:'2440476',
-    population: '15,878,271', area_km2: '1,267,000', gdp_dallar_usd: '	7.304 Billion')
-	TypCountry.create(id: 566, iso: 'NG', iso3: 'NGA', fips: 'NI',country: 'Nigeria', continent:'AF', currency_code:'NGN', currency_name:'Naira', phone_prefix:'234', postal_code: '^(d{6})$', languages:'en-NG,ha,yo,ig,ff', geonameid:'2328926',
-    population: '154,000,000', area_km2: '923,768', gdp_dallar_usd: '502 Billion')
-	TypCountry.create(id: 570, iso: 'NU', iso3: 'NIU', fips: 'NE',country: 'Niue', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'683', postal_code:'', languages:'niu,en-NU', geonameid:'4036232',
-    population: '2,166', area_km2: '260', gdp_dallar_usd: '10.01 Million')
-	TypCountry.create(id: 574, iso: 'NF', iso3: 'NFK', fips: 'NF',country: 'Norfolk Island', continent:'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'672', postal_code:'', languages:'en-NF', geonameid:'2155115',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 578, iso: 'NO', iso3: 'NOR', fips: 'NO',country: 'Norway', continent:'EU', currency_code:'NOK', currency_name:'Krone', phone_prefix:'47', postal_code: '^(d{4})$', languages:'no,nb,nn', geonameid:'3144096',
-    population: '5,009,150', area_km2: '324,220', gdp_dallar_usd: '515.8 Billion')
-	TypCountry.create(id: 580, iso: 'MP', iso3: 'MNP', fips: 'CQ',country: 'Northern Mariana Islands', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-670', postal_code:'', languages:'fil,tl,zh,ch-MP,en-MP', geonameid:'4041467',
-    population: '53,883', area_km2: '477', gdp_dallar_usd: '733 Million')
-	TypCountry.create(id: 581, iso: 'UM', iso3: 'UMI', fips: '', country: 'United States Minor Outlying Islands', continent:'OC', currency_code:'USD', currency_name:'Dollar ', phone_prefix:'', postal_code:'', languages:'en-UM', geonameid:'5854968',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	### TypCountry.create(id: 583, iso: 'FM', iso3: 'FSM', fips: 'FM',country: 'Micronesia', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'691', postal_code: '^(d{5})$', languages:'en-FM,chk,pon,yap,kos,uli,woe,nkr,kpg', geonameid:'2081918',
-    population: '107,708', area_km2: '702', gdp_dallar_usd: '339 Million')
-	###TypCountry.create(id: 584, iso: 'MH', iso3: 'MHL', fips: 'RM',country: 'Marshall Islands', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'692', postal_code:'', languages:'mh,en-MH', geonameid:'2080185',
-    population: '65,859', area_km2: '181', gdp_dallar_usd: '193 Million')
-
-
-	TypCountry.create(id: 585, iso: 'PW', iso3: 'PLW', fips: 'PS',country: 'Palau', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'680', postal_code: '^(96940)$', languages:'pau,sov,en-PW,tox,ja,fil,zh', geonameid:'1559582',
-    population: '19,907', area_km2: '458', gdp_dallar_usd: '221 Million')
-	TypCountry.create(id: 586, iso: 'PK', iso3: 'PAK', fips: 'PK',country: 'Pakistan', continent:'AS', currency_code:'PKR', currency_name:'Rupee', phone_prefix:'92', postal_code: '^(d{5})$', languages:'ur-PK,en-PK,pa,sd,ps,brh', geonameid:'1168579',
-    population: '184,404,791', area_km2: '803,940', gdp_dallar_usd: '236.5 Billion')
-	TypCountry.create(id: 591, iso: 'PA', iso3: 'PAN', fips: 'PM',country: 'Panama', continent:'NA', currency_code:'PAB', currency_name:'Balboa', phone_prefix:'507', postal_code:'', languages:'es-PA,en', geonameid:'3703430',
-    population: '3,410,676', area_km2: '78,200', gdp_dallar_usd: '40.62 Billion')
-	TypCountry.create(id: 598, iso: 'PG', iso3: 'PNG', fips: 'PP',country: 'Papua New Guinea', continent:'OC', currency_code:'PGK', currency_name:'Kina', phone_prefix:'675', postal_code: '^(d{3})$', languages:'en-PG,ho,meu,tpi', geonameid:'2088628',
-    population: '6,064,515', area_km2: '462,840', gdp_dallar_usd: '16.1 Billion')
-	TypCountry.create(id: 600, iso: 'PY', iso3: 'PRY', fips: 'PA',country: 'Paraguay', continent:'SA', currency_code:'PYG', currency_name:'Guarani', phone_prefix:'595', postal_code: '^(d{4})$', languages:'es-PY,gn', geonameid:'3437598',
-    population: '6,375,830', area_km2: '406,750', gdp_dallar_usd: '30.56 Billion')
-	TypCountry.create(id: 604, iso: 'PE', iso3: 'PER', fips: 'PE',country: 'Peru', continent:'SA', currency_code:'PEN', currency_name:'Sol', phone_prefix:'51', postal_code:'', languages:'es-PE,qu,ay', geonameid:'3932488',
-    population: '29,907,003', area_km2: '1,285,220', gdp_dallar_usd: '210.3 Billion')
-	TypCountry.create(id: 608, iso: 'PH', iso3: 'PHL', fips: 'RP',country: 'Philippines', continent:'AS', currency_code:'PHP', currency_name:'Peso', phone_prefix:'63', postal_code: '^(d{4})$', languages:'tl,en-PH,fil', geonameid:'1694008',
-    population: '99,900,177', area_km2: '300,000', gdp_dallar_usd: '')
-	TypCountry.create(id: 612, iso: 'PN', iso3: 'PCN', fips: 'PC',country: 'Pitcairn', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'', postal_code:'', languages:'en-PN', geonameid:'4030699',
-    population: '46', area_km2: '47', gdp_dallar_usd: '')
-	TypCountry.create(id: 616, iso: 'PL', iso3: 'POL', fips: 'PL',country: 'Poland', continent:'EU', currency_code:'PLN', currency_name:'Zloty', phone_prefix:'48', postal_code: '^(d{5})$', languages:'pl', geonameid:'798544',
-    population: '38,500,000', area_km2: '312,685', gdp_dallar_usd: '513.9 Billion')
-	TypCountry.create(id: 620, iso: 'PT', iso3: 'PRT', fips: 'PO',country: 'Portugal', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'351', postal_code: '^(d{7})$', languages:'pt-PT,mwl', geonameid:'2264397',
-    population: '10,676,000', area_km2: '92,391', gdp_dallar_usd: '219.3 Billion')
-	### TypCountry.create(id: 624, iso: 'GW', iso3: 'GNB', fips: 'PU',country: 'Guinea-Bissau', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'245', postal_code: '^(d{4})$', languages:'pt-GW,pov', geonameid:'2372248',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	### TypCountry.create(id: 626, iso: 'TL', iso3: 'TLS', fips: 'TT',country: 'East Timor', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'670', postal_code:'', languages:'tet,pt-TL,id,en', geonameid:'1966436',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 630, iso: 'PR', iso3: 'PRI', fips: 'RQ',country: 'Puerto Rico', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-787 and 1-939', postal_code: '^(d{9})$', languages:'en-PR,es-PR', geonameid:'4566966',
-    population: '3,916,632', area_km2: '9,104', gdp_dallar_usd: '93.52 Billion')
-
-
-	TypCountry.create(id: 634, iso: 'QA', iso3: 'QAT', fips: 'QA',country: 'Qatar', continent:'AS', currency_code:'QAR', currency_name:'Rial', phone_prefix:'974', postal_code:'', languages:'ar-QA,es', geonameid:'289688',
-    population: '840,926', area_km2: '11,437', gdp_dallar_usd: '213.1 Billion')
-
-
-	TypCountry.create(id: 638, iso: 'RE', iso3: 'REU', fips: 'RE',country: 'Reunion', continent:'AF', currency_code:'EUR', currency_name:'Euro', phone_prefix:'262', postal_code: '^((97)|(98)(4|7|8)d{2})$', languages:'fr-RE', geonameid:'935317',
-    population: '776,948', area_km2: '2,517', gdp_dallar_usd: '')
-	TypCountry.create(id: 642, iso: 'RO', iso3: 'ROU', fips: 'RO',country: 'Romania', continent:'EU', currency_code:'RON', currency_name:'Leu', phone_prefix:'40', postal_code: '^(d{6})$', languages:'ro,hu,rom', geonameid:'798549',
-    population: '21,959,278', area_km2: '237,500', gdp_dallar_usd: '188.9 Billion')
-	TypCountry.create(id: 643, iso: 'RU', iso3: 'RUS', fips: 'RS',country: 'Russia', continent:'EU', currency_code:'RUB', currency_name:'Ruble', phone_prefix:'7', postal_code: '^(d{6})$', languages:'ru-RU', geonameid:'2017370',
-    population: '140,702,000', area_km2: '17,100,000', gdp_dallar_usd: '	2.113 Trillion')
-	TypCountry.create(id: 646, iso: 'RW', iso3: 'RWA', fips: 'RW',country: 'Rwanda', continent:'AF', currency_code:'RWF', currency_name:'Franc', phone_prefix:'250', postal_code:'', languages:'rw,en-RW,fr-RW,sw', geonameid:'49518',
-    population: '11,055,976', area_km2: '26,338', gdp_dallar_usd: '7.7 Billion')
-
-
-
-	TypCountry.create(id: 652, iso: 'BL', iso3: 'BLM', fips: 'TB',country: 'Saint Barthélemy', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'590', postal_code:'', languages:'fr', geonameid:'3578476',
-    population: '8,450', area_km2: '21', gdp_dallar_usd: '')
-	TypCountry.create(id: 654, iso: 'SH', iso3: 'SHN', fips: 'SH',country: 'Saint Helena', continent:'AF', currency_code:'SHP', currency_name:'Pound', phone_prefix:'290', postal_code: '^(STHL1ZZ)$', languages:'en-SH', geonameid:'3370751',
-    population: '7,460', area_km2: '410', gdp_dallar_usd: '')
-	TypCountry.create(id: 659, iso: 'KN', iso3: 'KNA', fips: 'SC',country: 'Saint Kitts and Nevis',continent: 'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-869', postal_code:'', languages:'en-KN', geonameid:'3575174',
-    population: '51,134', area_km2: '261', gdp_dallar_usd: '767 Million')
-	## TypCountry.create(id: 660, iso: 'AI', iso3: 'AIA', fips: 'AV',country: 'Anguilla', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-264', postal_code:'', languages:'en-AI', geonameid:'3573511',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 662, iso: 'LC', iso3: 'LCA', fips: 'ST',country: 'Saint Lucia', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-758', postal_code:'', languages:'en-LC', geonameid:'3576468',
-    population: '160,922', area_km2: '616', gdp_dallar_usd: '1.377 Billion')
-	TypCountry.create(id: 663, iso: 'MF', iso3: 'MAF', fips: 'RN',country: 'Saint Martin', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'590', postal_code:'', languages:'fr', geonameid:'3578421',
-    population: '35,925', area_km2: '53', gdp_dallar_usd: '561.5 Million')
-	TypCountry.create(id: 666, iso: 'PM', iso3: 'SPM', fips: 'SB',country: 'Saint Pierre and Miquelon', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'508', postal_code: '^(97500)$', languages:'fr-PM', geonameid:'3424932',
-    population: '7,012', area_km2: '242', gdp_dallar_usd: '215.3 Million')
-	TypCountry.create(id: 670, iso: 'VC', iso3: 'VCT', fips: 'VC',country: 'Saint Vincent and the Grenadines', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-784', postal_code:'', languages:'en-VC,fr', geonameid:'3577815',
-    population: '104,217', area_km2: '389', gdp_dallar_usd: '742 Million')
-	TypCountry.create(id: 674, iso: 'SM', iso3: 'SMR', fips: 'SM',country: 'San Marino', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'378', postal_code: '^(4789d)$', languages:'it-SM', geonameid:'3168068',
-    population: '31,477', area_km2: '61', gdp_dallar_usd: '1.866 Billion')
-	TypCountry.create(id: 678, iso: 'ST', iso3: 'STP', fips: 'TP',country: 'Sao Tome and Principe', continent:'AF', currency_code:'STD', currency_name:'Dobra', phone_prefix:'239', postal_code:'', languages:'pt-ST', geonameid:'2410758',
-    population: '175,808', area_km2: '1,001', gdp_dallar_usd: '311 Million')
-	TypCountry.create(id: 682, iso: 'SA', iso3: 'SAU', fips: 'SA',country: 'Saudi Arabia', continent:'AS', currency_code:'SAR', currency_name:'Rial', phone_prefix:'966', postal_code: '^(d{5})$', languages:'ar-SA', geonameid:'102358',
-    population: '25,731,776', area_km2: '1,960,582', gdp_dallar_usd: '718.5 Billion')
-	TypCountry.create(id: 686, iso: 'SN', iso3: 'SEN', fips: 'SG',country: 'Senegal', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'221', postal_code: '^(d{5})$', languages:'fr-SN,wo,fuc,mnk', geonameid:'2245662',
-    population: '12,323,252', area_km2: '196,190', gdp_dallar_usd: '15.36 Billion')
-	TypCountry.create(id: 688, iso: 'RS', iso3: 'SRB', fips: 'RB',country: 'Serbia', continent:'EU', currency_code:'RSD', currency_name:'Dinar', phone_prefix:'381', postal_code: '^(d{6})$', languages:'sr,hu,bs,rom', geonameid:'6290252',
-    population: '7,344,847', area_km2: '88,361', gdp_dallar_usd: '43.68 Billion')
-	TypCountry.create(id: 690, iso: 'SC', iso3: 'SYC', fips: 'SE',country: 'Seychelles', continent:'AF', currency_code:'SCR', currency_name:'Rupee', phone_prefix:'248', postal_code:'', languages:'en-SC,fr-SC', geonameid:'241170',
-    population: '	88,340', area_km2: '455', gdp_dallar_usd: '1.271 Billion')
-	TypCountry.create(id: 694, iso: 'SL', iso3: 'SLE', fips: 'SL',country: 'Sierra Leone', continent:'AF', currency_code:'SLL', currency_name:'Leone', phone_prefix:'232', postal_code:'', languages:'en-SL,men,tem', geonameid:'2403846',
-    population: '5,245,695', area_km2: '71,740', gdp_dallar_usd: '4.607 Billion')
-	TypCountry.create(id: 702, iso: 'SG', iso3: 'SGP', fips: 'SN',country: 'Singapore', continent:'AS', currency_code:'SGD', currency_name:'Dollar', phone_prefix:'65', postal_code: '^(d{6})$', languages:'cmn,en-SG,ms-SG,ta-SG,zh-SG', geonameid:'1880251',
-    population: '4,701,069', area_km2: '693', gdp_dallar_usd: '295.7 Billion')
-	TypCountry.create(id: 703, iso: 'SK', iso3: 'SVK', fips: 'LO',country: 'Slovakia', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'421', postal_code: '^(d{5})$', languages:'sk,hu', geonameid:'3057568',
-    population: '5,455,000', area_km2: '48,845', gdp_dallar_usd: '96.96 Billion')
-	### TypCountry.create(id: 704, iso: 'VN', iso3: 'VNM', fips: 'VM',country: 'Vietnam', continent:'AS', currency_code:'VND', currency_name:'Dong', phone_prefix:'84', postal_code: '^(d{6})$', languages:'vi,en,fr,zh,km', geonameid:'1562822',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 705, iso: 'SI', iso3: 'SVN', fips: 'SI',country: 'Slovenia', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'386', postal_code: '^(?:SI)*(d{4})$', languages:'sl,sh', geonameid:'3190538',
-    population: '2,007,000', area_km2: '20,273', gdp_dallar_usd: '46.82 Billion')
-	TypCountry.create(id: 706, iso: 'SO', iso3: 'SOM', fips: 'SO',country: 'Somalia', continent:'AF', currency_code:'SOS', currency_name:'Shilling', phone_prefix:'252', postal_code: '^([A-Z]{2}d{5})$', languages:'so-SO,ar-SO,it,en-SO', geonameid:'51537',
-    population: '10,112,453', area_km2: '637,657', gdp_dallar_usd: '2.372 Billion')
-	TypCountry.create(id: 710, iso: 'ZA', iso3: 'ZAF', fips: 'SF',country: 'South Africa', continent:'AF', currency_code:'ZAR', currency_name:'Rand', phone_prefix:'27', postal_code: '^(d{4})$', languages:'zu,xh,af,nso,en-ZA,tn,st,ts', geonameid:'953987',
-    population: '49,000,000', area_km2: '1,219,912', gdp_dallar_usd: '353.9 Billion')
-	## TypCountry.create(id: 716, iso: 'ZW', iso3: 'ZWE', fips: 'ZI',country: 'Zimbabwe', continent:'AF', currency_code:'ZWL', currency_name:'Dollar', phone_prefix:'263', postal_code:'', languages:'en-ZW,sn,nr,nd', geonameid:'878675',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 724, iso: 'ES', iso3: 'ESP', fips: 'SP',country: 'Spain', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'34', postal_code: '^(d{5})$', languages:'es-ES,ca,gl,eu', geonameid:'2510769',
-    population: '46,505,963', area_km2: '504,782', gdp_dallar_usd: '1.356 Trillion')
-	## TypCountry.create(id: 732, iso: 'EH', iso3: 'ESH', fips: 'WI',country: 'Western Sahara', continent:'AF', currency_code:'MAD', currency_name:'Dirham', phone_prefix:'212', postal_code:'', languages:'ar,mey', geonameid:'2461445',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 736, iso: 'SD', iso3: 'SDN', fips: 'SU',country: 'Sudan', continent:'AF', currency_code:'SDG', currency_name:'Dinar', phone_prefix:'249', postal_code: '^(d{5})$', languages:'ar-SD,en,fia', geonameid:'366755',
-    population: '35,000,000', area_km2: '1,861,484', gdp_dallar_usd: '52.5 Billion')
-	TypCountry.create(id: 740, iso: 'SR', iso3: 'SUR', fips: 'NS',country: 'Suriname', continent:'SA', currency_code:'SRD', currency_name:'Dollar', phone_prefix:'597', postal_code:'', languages:'nl-SR,en,srn,hns,jv', geonameid:'3382998',
-    population: '492,829', area_km2: '163,270', gdp_dallar_usd: '5.009 Billion')
-	TypCountry.create(id: 744, iso: 'SJ', iso3: 'SJM', fips: 'SV',country: 'Svalbard and Jan Mayen', continent:'EU', currency_code:'NOK', currency_name:'Krone', phone_prefix:'47', postal_code:'', languages:'no,ru', geonameid:'607072',
-    population: '2,550', area_km2: '62,049', gdp_dallar_usd: '')
-	TypCountry.create(id: 748, iso: 'SZ', iso3: 'SWZ', fips: 'WZ',country: 'Swaziland', continent:'AF', currency_code:'SZL', currency_name:'Lilangeni', phone_prefix:'268', postal_code: '^([A-Z]d{3})$', languages:'en-SZ,ss-SZ', geonameid:'934841',
-    population: '1,354,051', area_km2: '17,363', gdp_dallar_usd: '3.807 Billion')
-	TypCountry.create(id: 752, iso: 'SE', iso3: 'SWE', fips: 'SW',country: 'Sweden', continent:'EU', currency_code:'SEK', currency_name:'Krona', phone_prefix:'46', postal_code: '^(?:SE)*(d{5})$', languages:'sv-SE,se,sma,fi-SE', geonameid:'2661886',
-    population: '9,555,893', area_km2: '449,964', gdp_dallar_usd: '552 Billion')
-	TypCountry.create(id: 756, iso: 'CH', iso3: 'CHE', fips: 'SZ',country: 'Switzerland', continent:'EU', currency_code:'CHF', currency_name:'Franc', phone_prefix:'41', postal_code: '^(d{4})$', languages:'de-CH,fr-CH,it-CH,rm', geonameid:'2658434',
-    population: '1,354,051', area_km2: '17,363', gdp_dallar_usd: '3.807 Billion')
-	TypCountry.create(id: 760, iso: 'SY', iso3: 'SYR', fips: 'SY',country: 'Syria', continent:'AS', currency_code:'SYP', currency_name:'Pound', phone_prefix:'963', postal_code:'', languages:'ar-SY,ku,hy,arc,fr,en', geonameid:'163843',
-    population: '22,198,110', area_km2: '185,180', gdp_dallar_usd: '64.7 Billion')
-
-
-
-
-	TypCountry.create(id: 762, iso: 'TJ', iso3: 'TJK', fips: 'TI',country: 'Tajikistan', continent:'AS', currency_code:'TJS', currency_name:'Somoni', phone_prefix:'992', postal_code: '^(d{6})$', languages:'tg,ru', geonameid:'1220409',
-    population: '7,487,489', area_km2: '143,100', gdp_dallar_usd: '8.513 Billion')
-	TypCountry.create(id: 764, iso: 'TH', iso3: 'THA', fips: 'TH',country: 'Thailand', continent:'AS', currency_code:'THB', currency_name:'Baht', phone_prefix:'66', postal_code: '^(d{5})$', languages:'th,en', geonameid:'1605651',
-    population: '67,089,500', area_km2: '514,000', gdp_dallar_usd: '400.9 Billion')
-	TypCountry.create(id: 768, iso: 'TG', iso3: 'TGO', fips: 'TO',country: 'Togo', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'228', postal_code:'', languages:'fr-TG,ee,hna,kbp,dag,ha', geonameid:'2363686',
-    population: '6,587,239', area_km2: '	56,785', gdp_dallar_usd: '4.299 Billion')
-	TypCountry.create(id: 772, iso: 'TK', iso3: 'TKL', fips: 'TL',country: 'Tokelau', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'690', postal_code:'', languages:'tkl,en-TK', geonameid:'4031074',
-    population: '1,466', area_km2: '10', gdp_dallar_usd: '')
-	TypCountry.create(id: 776, iso: 'TO', iso3: 'TON', fips: 'TN',country: 'Tonga', continent:'OC', currency_code:'TOP', currency_name:'Pa''anga', phone_prefix:'676', postal_code:'', languages:'to,en-TO', geonameid:'4032283',
-    population: '122,580', area_km2: '748', gdp_dallar_usd: '477 Million')
-	TypCountry.create(id: 780, iso: 'TT', iso3: 'TTO', fips: 'TD',country: 'Trinidad and Tobago', continent:'NA', currency_code:'TTD', currency_name:'Dollar', phone_prefix:'+1-868', postal_code:'', languages:'en-TT,hns,fr,es,zh', geonameid:'3573591',
-    population: '1,228,691', area_km2: '5,128', gdp_dallar_usd: '27.13 Billion')
-	### TypCountry.create(id: 784, iso: 'AE', iso3: 'ARE', fips: 'AE',country: 'United Arab Emirates', continent:'AS', currency_code:'AED', currency_name:'Dirham', phone_prefix:'971', postal_code:'', languages:'ar-AE,fa,en,hi,ur', geonameid:'290557',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 788, iso: 'TN', iso3: 'TUN', fips: 'TS',country: 'Tunisia', continent:'AF', currency_code:'TND', currency_name:'Dinar', phone_prefix:'216', postal_code: '^(d{4})$', languages:'ar-TN,fr', geonameid:'2464461',
-    population: '10,589,025', area_km2: '163,610', gdp_dallar_usd: '48.38 Billion')
-	TypCountry.create(id: 792, iso: 'TR', iso3: 'TUR', fips: 'TU',country: 'Turkey', continent:'AS', currency_code:'TRY', currency_name:'Lira', phone_prefix:'90', postal_code: '^(d{5})$', languages:'tr-TR,ku,diq,az,av', geonameid:'298795',
-    population: '77,804,122', area_km2: '780,580', gdp_dallar_usd: '821.8 Billion')
-	TypCountry.create(id: 795, iso: 'TM', iso3: 'TKM', fips: 'TX',country: 'Turkmenistan', continent:'AS', currency_code:'TMT', currency_name:'Manat', phone_prefix:'993', postal_code: '^(d{6})$', languages:'tk,ru,uz', geonameid:'1218197',
-    population: '4,940,916', area_km2: '488,100', gdp_dallar_usd: '40.56 Billion')
-	TypCountry.create(id: 796, iso: 'TC', iso3: 'TCA', fips: 'TK',country: 'Turks and Caicos Islands', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-649', postal_code: '^(TKCA 1ZZ)$', languages:'en-TC', geonameid:'3576916',
-    population: '20,556', area_km2: '430', gdp_dallar_usd: '')
-	TypCountry.create(id: 798, iso: 'TV', iso3: 'TUV', fips: 'TV',country: 'Tuvalu', continent:'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'688', postal_code:'', languages:'tvl,en,sm,gil', geonameid:'2110297',
-    population: '10,472', area_km2: '26', gdp_dallar_usd: '38 Million')
-
-
-
-
-	TypCountry.create(id: 800, iso: 'UG', iso3: 'UGA', fips: 'UG',country: 'Uganda', continent:'AF', currency_code:'UGX', currency_name:'Shilling', phone_prefix:'256', postal_code:'', languages:'en-UG,lg,sw,ar', geonameid:'226074',
-    population: '33,398,682', area_km2: '236,040', gdp_dallar_usd: '22.6 Billion')
-	TypCountry.create(id: 804, iso: 'UA', iso3: 'UKR', fips: 'UP',country: 'Ukraine', continent:'EU', currency_code:'UAH', currency_name:'Hryvnia', phone_prefix:'380', postal_code: '^(d{5})$', languages:'uk,ru-UA,rom,pl,hu', geonameid:'690791',
-    population: '45,415,596', area_km2: '603,700', gdp_dallar_usd: '175.5 Billion')
-	### TypCountry.create(id: 807, iso: 'MK', iso3: 'MKD', fips: 'MK',country: 'Macedonia', continent:'EU', currency_code:'MKD', currency_name:'Denar', phone_prefix:'389', postal_code: '^(d{4})$', languages:'mk,sq,tr,rmm,sr', geonameid:'718075',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	### TypCountry.create(id: 818, iso: 'EG', iso3: 'EGY', fips: 'EG',country: 'Egypt', continent:'AF', currency_code:'EGP', currency_name:'Pound', phone_prefix:'20', postal_code: '^(d{5})$', languages:'ar-EG,en,fr', geonameid:'357994',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 826, iso: 'GB', iso3: 'GBR', fips: 'UK',country: 'United Kingdom', continent:'EU', currency_code:'GBP', currency_name:'Pound', phone_prefix:'44', postal_code: '^(([A-Z]d{2}[A-Z]{2})|([A-Z]d{3}[A-Z]{2})|([A', languages:'en-GB,cy-GB,gd', geonameid:'2635167',
-    population: '62,348,447', area_km2: '244,820', gdp_dallar_usd: '2.49 Trillion')
-	### TypCountry.create(id: 831, iso: 'GG', iso3: 'GGY', fips: 'GK',country: 'Guernsey', continent:'EU', currency_code:'GBP', currency_name:'Pound', phone_prefix:'+44-1481', postal_code: '^(([A-Z]d{2}[A-Z]{2})|([A-Z]d{3}[A-Z]{2})|([A', languages:'en,fr', geonameid:'3042362',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	### TypCountry.create(id: 832, iso: 'JE', iso3: 'JEY', fips: 'JE',country: 'Jersey', continent:'EU', currency_code:'GBP', currency_name:'Pound', phone_prefix:'+44-1534', postal_code: '^(([A-Z]d{2}[A-Z]{2})|([A-Z]d{3}[A-Z]{2})|([A', languages:'en,pt', geonameid:'3042142',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	### TypCountry.create(id: 833, iso: 'IM', iso3: 'IMN', fips: 'IM',country: 'Isle of Man', continent:'EU', currency_code:'GBP', currency_name:'Pound', phone_prefix:'+44-1624', postal_code: '^(([A-Z]d{2}[A-Z]{2})|([A-Z]d{3}[A-Z]{2})|([A', languages:'en,gv', geonameid:'3042225',
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	###TypCountry.create(id: 834, iso: 'TZ', iso3: 'TZA', fips: 'TZ',country: 'Tanzania', continent:'AF', currency_code:'TZS', currency_name:'Shilling', phone_prefix:'255', postal_code:'', languages:'sw-TZ,en,ar', geonameid:'149590',
-    population: '41,892,895', area_km2: '945,087', gdp_dallar_usd: '31.94 Billion')
-	TypCountry.create(id: 840, iso: 'US', iso3: 'USA', fips: 'US',country: 'United States', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'1', postal_code: '^(d{9})$', languages:'en-US,es-US,haw', geonameid:'6252001'
-    population: '310,232,863', area_km2: '9,629,091', gdp_dallar_usd: '16.72 Trillion')
-	TypCountry.create(id: 850, iso: 'VI', iso3: 'VIR', fips: 'VQ',country: 'U.S. Virgin Islands', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-340', postal_code:'', languages:'en-VI', geonameid:'4796775'
-    population: '108,708', area_km2: '352', gdp_dallar_usd: '')
-	### TypCountry.create(id: 855, iso: 'XK', iso3: 'XKX', fips: 'KV',country: 'Kosovo', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'', postal_code:'', languages:'sq,sr', geonameid:'831053'
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 858, iso: 'UY', iso3: 'URY', fips: 'UY',country: 'Uruguay', continent:'SA', currency_code:'UYU', currency_name:'Peso', phone_prefix:'598', postal_code: '^(d{5})$', languages:'es-UY', geonameid:'3439705'
-    population: '3,477,000', area_km2: '176,220', gdp_dallar_usd: '57.11 Billion')
-	TypCountry.create(id: 860, iso: 'UZ', iso3: 'UZB', fips: 'UZ',country: 'Uzbekistan', continent:'AS', currency_code:'UZS', currency_name:'Som', phone_prefix:'998', postal_code: '^(d{6})$', languages:'uz,ru,tg', geonameid:'1512440'
-    population: '27,865,738', area_km2: '447,400', gdp_dallar_usd: '55.18 Billion')
-
-
-	TypCountry.create(id: 862, iso: 'VE', iso3: 'VEN', fips: 'VE',country: 'Venezuela', continent:'SA', currency_code:'VEF', currency_name:'Bolivar', phone_prefix:'58', postal_code: '^(d{4})$', languages:'es-VE', geonameid:'3625428'
-    population: '27,223,228', area_km2: '912,050', gdp_dallar_usd: '367.5 Billion')
-
-	TypCountry.create(id: 876, iso: 'WF', iso3: 'WLF', fips: 'WF',country: 'Wallis and Futuna', continent:'OC', currency_code:'XPF', currency_name:'Franc', phone_prefix:'681', postal_code: '^(986d{2})$', languages:'wls,fud,fr-WF', geonameid:'4034749'
-    population: '16,025', area_km2: '274', gdp_dallar_usd: '')
-	### TypCountry.create(id: 882, iso: 'WS', iso3: 'WSM', fips: 'WS',country: 'Samoa', continent:'OC', currency_code:'WST', currency_name:'Tala', phone_prefix:'685', postal_code:'', languages:'sm,en-WS', geonameid:'4034894'
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 887, iso: 'YE', iso3: 'YEM', fips: 'YM',country: 'Yemen', continent:'AS', currency_code:'YER', currency_name:'Rial', phone_prefix:'967', postal_code:'', languages:'ar-YE', geonameid:'69543'
-    population: '23,495,361', area_km2: '527,970', gdp_dallar_usd: '43.89 Billion')
-	### TypCountry.create(id: 891, iso: 'CS', iso3: 'SCG', fips: 'YI',country: 'Serbia and Montenegro', continent:'EU', currency_code:'RSD', currency_name:'Dinar', phone_prefix:'381', postal_code: '^(d{5})$', languages:'cu,hu,sq,sr', geonameid:'863038'
-    population: '', area_km2: '', gdp_dallar_usd: '')
-	TypCountry.create(id: 894, iso: 'ZM', iso3: 'ZMB', fips: 'ZA',country: 'Zambia', continent:'AF', currency_code:'ZMK', currency_name:'Kwacha', phone_prefix:'260', postal_code: '^(d{5})$', languages:'en-ZM,bem,loz,lun,lue,ny,toi', geonameid:'895949'
-    population: '13,460,305', area_km2: '752,614', gdp_dallar_usd: '22.24 Billion');
+    population: '2,986,952', area_km2:'28,748', gdp_dallar_usd:'12.8 Billion')
+	# # TypCountry.create(id: 10,iso:  'AQ', iso3: 'ATA', fips: 'AY', country: 'Antarctica',continent:'AN', currency_code:'', currency_name:'', phone_prefix:'', postal_code:'', languages:'', geonameid:'6697173',
+    # # population: '0', area_km2: '14,000,00', gdp_dallar_usd: '')
+	# TypCountry.create(id: 12,iso:  'DZ', iso3: 'DZA', fips: 'AG', country: 'Algeria',continent: 'AF', currency_code:'DZD', currency_name:'Dinar', phone_prefix:'213', postal_code: '^(d{5})$', languages:'ar-DZ', geonameid:'2589581',
+    # #population: '34,586,184', area_km2:'2,381,740', gdp_dallar_usd: '215.7 Billion')
+	# TypCountry.create(id: 16,iso:  'AS', iso3: 'ASM', fips: 'AQ', country: 'American Samoa',continent: 'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-684', postal_code:'', languages:'en-AS,sm,to', geonameid:'5880801',
+    # #population: '57,881', area_km2: '199', gdp_dallar_usd: '462.2 Million')
+	# TypCountry.create(id: 20,iso:  'AD', iso3: 'AND', fips: 'AN', country: 'Andorra',continent: 'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'376', postal_code: '^(?:AD)*(d{3})$', languages:'ca,fr-AD,pt', geonameid:'3041565',
+    # #population: '84,000', area_km2: '468', gdp_dallar_usd: '4.8 Billion')
+	# TypCountry.create(id: 24,iso:  'AO', iso3: 'AGO', fips: 'AO', country: 'Angola',continent: 'AF', currency_code:'AOA', currency_name:'Kwanza', phone_prefix:'244', postal_code:'', languages:'pt-AO', geonameid:'3351879',
+    # #population: '13,068,161', area_km2: '1,246,700', gdp_dallar_usd: '124 Billion')
+	# TypCountry.create(id: 28,iso:  'AG', iso3: 'ATG', fips: 'AC', country: 'Antigua and Barbuda',continent: 'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-268', postal_code:'', languages:'en-AG', geonameid:'3576396',
+    # #population: '86,754', area_mk2: '443', gdp_dallar_usd: '1.22 Billion')
+	# TypCountry.create(id: 31,iso:  'AZ', iso3: 'AZE', fips: 'AJ', country: 'Azerbaijan',continent: 'AS', currency_code:'AZN', currency_name:'Manat', phone_prefix:'994', postal_code: '^(?:AZ)*(d{4})$', languages:'az,ru,hy', geonameid:'587116',
+    # #population: '8,303,512', area_km2: '86,600', dgp_dollar_usd: '76.01 Billion')
+	# TypCountry.create(id: 32,iso:  'AR', iso3: 'ARG', fips: 'AR', country: 'Argentina',continent: 'SA', currency_code:'ARS', currency_name:'Peso', phone_prefix:'54', postal_code: '^([A-Z]d{4}[A-Z]{3})$', languages:'es-AR,en,it,de,fr', geonameid:'3865483',
+    # #population: '41,343,201', area_km2: '2,766,890', gdp_dallar_usd: '484.6 Billion')
+	# TypCountry.create(id: 36,iso:  'AU', iso3: 'AUS', fips: 'AS', country: 'Australia',continent: 'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'61', postal_code: '^(d{4})$', languages:'en-AU', geonameid:'2077456',
+    # #population: '21,515,754', area_km2: '7,686,850', gdp_dallar_usd: '1.488 Trillion')
+	# TypCountry.create(id: 40,iso:  'AT', iso3: 'AUT', fips: 'AU', country: 'Austria',continent: 'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'43', postal_code: '^(d{4})$', languages:'de-AT,hr,hu,sl', geonameid:'2782113',
+    # #population: '8,205,00', area_km2: '83,858', gdp_dallar_usd: '417.9 Billion')
+    #
+    #                                                                                                         #The List country strating with letter B
+    #
+    #
+	# TypCountry.create(id: 44,iso:  'BS', iso3: 'BHS', fips: 'BF', country: 'Bahamas',continent: 'NA', currency_code:'BSD', currency_name:'Dollar', phone_prefix:'+1-242', postal_code:'', languages:'en-BS', geonameid:'3572887',
+    # #population: '301,790', area_km2: '13,940', gdp_dallar_usd:  '8.373 Billion')
+	# TypCountry.create(id: 48,iso:  'BH', iso3: 'BHR', fips: 'BA', country: 'Bahrain',continent: 'AS', currency_code:'BHD', currency_name:'Dinar', phone_prefix:'973', postal_code: '^(d{3}d?)$', languages:'ar-BH,en,fa,ur', geonameid:'290291',
+    # #population: '738,004', area_km2: '665', gdp_dallar_usd: '28.36 Billion')
+	# TypCountry.create(id: 50,iso:  'BD', iso3: 'BGD', fips: 'BG', country: 'Bangladesh',continent: 'AS', currency_code:'BDT', currency_name:'Taka', phone_prefix:'880', postal_code: '^(d{4})$', languages:'bn-BD,en', geonameid:'1210997',
+    # #population: '156,118,464', area_km2: '144,000', gdp_dallar_usd: '140.2 Billion')
+	# TypCountry.create(id: 51,iso:  'AM', iso3: 'ARM', fips: 'AM', country: 'Armenia',continent: 'AS', currency_code:'AMD', currency_name:'Dram', phone_prefix:'374', postal_code: '^(d{6})$', languages:'hy', geonameid:'174982',
+    # #population: '2968,000', area_km2: '29,800', gdp_dallar_usd: '10.44 Billion')
+	# TypCountry.create(id: 52,iso:  'BB', iso3: 'BRB', fips: 'BB', country: 'Barbados',continent: 'NA', currency_code:'BBD', currency_name:'Dollar', phone_prefix:'+1-246', postal_code: '^(?:BB)*(d{5})$', languages:'en-BB', geonameid:'3374084',
+    # #population: '285,653', area_km2: '431', gdp_dallar_usd: '4.262 Billion')
+	# TypCountry.create(id: 56,iso:  'BE', iso3: 'BEL', fips: 'BE', country: 'Belgium',continent: 'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'32', postal_code: '^(d{4})$', languages:'nl-BE,fr-BE,de-BE', geonameid:'2802361',
+    # #population: '10,403,000', area_km2: '30,510', gdp_dallar_usd: '507.4 Billion')
+	# TypCountry.create(id: 60,iso:  'BM', iso3: 'BMU', fips: 'BD', country: 'Bermuda',continent: 'NA', currency_code:'BMD', currency_name:'Dollar', phone_prefix:'+1-441', postal_code: '^([A-Z]{2}d{2})$', languages:'en-BM,pt', geonameid:'3573345',
+    # #population: '65,365', area_km2: '53', gdp_dallar_usd: '5.6 Billion')
+	# TypCountry.create(id: 64,iso:  'BT', iso3: 'BTN', fips: 'BT', country: 'Bhutan',continent: 'AS', currency_code:'BTN', currency_name:'Ngultrum', phone_prefix:'975', postal_code:'', languages:'dz', geonameid:'1252634',
+    # #population: '699,847', area_km2: '47,000', gdp_dallar_usd: '2.133 Billion')
+	# TypCountry.create(id: 68,iso:  'BO', iso3: 'BOL', fips: 'BL', country: 'Bolivia',continent: 'SA', currency_code:'BOB', currency_name:'Boliviano', phone_prefix:'591', postal_code:'', languages:'es-BO,qu,ay', geonameid:'3923057',
+    # #population: '9,947,418', area_km2: '1,098,580', gdp_dallar_usd: '30.79 Billion')
+	# TypCountry.create(id: 70,iso:  'BA', iso3: 'BIH', fips: 'BK', country: 'Bosnia and Herzegovina',continent: 'EU', currency_code:'BAM', currency_name:'Marka', phone_prefix:'387', postal_code: '^(d{5})$', languages:'bs,hr-BA,sr-BA', geonameid:'3277605',
+    # #population: '4,590,000', area_km2: '51,129', gdp_dallar_usd: '18.87 Billion')
+	# TypCountry.create(id: 72,iso:  'BW', iso3: 'BWA', fips: 'BC', country: 'Botswana',continent: 'AF', currency_code:'BWP', currency_name:'Pula', phone_prefix:'267', postal_code:'', languages:'en-BW,tn-BW', geonameid:'933860',
+    # #population: '2,029,307', area_km2: '600,370', gdp_dallar_usd: '15.53 Billion')
+	# ### TypCountry.create(id: 74,iso:  'BV', iso3: 'BVT', fips: 'BV', country: 'Bouvet Island',continent: 'AN', currency_code:'NOK', currency_name:'Krone', phone_prefix:'', postal_code:'', languages:'', geonameid:'3371123',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 76,iso:  'BR', iso3: 'BRA', fips: 'BR', country: 'Brazil',continent: 'SA', currency_code:'BRL', currency_name:'Real', phone_prefix:'55', postal_code: '^(d{8})$', languages:'pt-BR,es,en,fr', geonameid:'3469034',
+    # #population: '201,103,330', area_km2: '8,511,965', gdp_dallar_usd: '2.19 Trillion')
+	# TypCountry.create(id: 84,iso:  'BZ', iso3: 'BLZ', fips: 'BH', country: 'Belize',continent: 'NA', currency_code:'BZD', currency_name:'Dollar', phone_prefix:'501', postal_code:'', languages:'en-BZ,es', geonameid:'3582678',
+    # #population: '314,522', area_km2: '22,966', gdp_dallar_usd: '1.637 Billion')
+	# TypCountry.create(id: 86,iso:  'IO', iso3: 'IOT', fips: 'IO', country: 'British Indian Ocean Territory',continent: 'AS', currency_code:'USD', currency_name:'Dollar', phone_prefix:'246', postal_code:'', languages:'en-IO', geonameid:'1282588',
+    # #population: '4,000', area_km2: '60', gdp_dallar_usd: '')
+	# ###TypCountry.create(id: 90,iso:  'SB', iso3: 'SLB', fips: 'BP', country: 'Solomon Islands',continent: 'OC', currency_code:'SBD', currency_name:'Dollar', phone_prefix:'677', postal_code:'', languages:'en-SB,tpi', geonameid:'2103350',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 92,iso:  'VG', iso3: 'VGB', fips: 'VI', country: 'British Virgin Islands',continent: 'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-284', postal_code:'', languages:'en-VG', geonameid:'3577718',
+    # #copopulation: '21,730', area_km2: '153', gdp_dallar_usd: '1.095 Billion')
+	# TypCountry.create(id: 96,iso:  'BN', iso3: 'BRN', fips: 'BX', country: 'Brunei',continent: 'AS', currency_code:'BND', currency_name:'Dollar', phone_prefix:'673', postal_code: '^([A-Z]{2}d{4})$', languages:'ms-BN,en-BN', geonameid:'1820814',
+    # #population: '395,027', area_km2: '5,770', gdp_dallar_usd: '16.56 Billion')
+	# TypCountry.create(id: 100, iso: 'BG', iso3: 'BGR', fips: 'BU',country: 'Bulgaria', continent: 'EU', currency_code:'BGN', currency_name:'Lev', phone_prefix:'359', postal_code: '^(d{4})$', languages:'bg,tr-BG', geonameid:'732800',
+    # #population: '7,148,785', area_km2: '110,910', gdp_dallar_usd: '53.7 Billion')
+	# ####TypCountry.create(id: 104, iso: 'MM', iso3: 'MMR', fips: 'BM',country: 'Myanmar', continent: 'AS', currency_code:'MMK', currency_name:'Kyat', phone_prefix:'95', postal_code: '^(d{5})$', languages:'my', geonameid:'1327865',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 108, iso: 'BI', iso3: 'BDI', fips: 'BY',country: 'Burundi', continent:'AF', currency_code:'BIF', currency_name:'Franc', phone_prefix:'257', postal_code:'', languages:'fr-BI,rn', geonameid:'433561',
+    # #population: '9,863,117', area_km2: '27,830', gdp_dallar_usd: '2.676 Billion')
+	# TypCountry.create(id: 112, iso: 'BY', iso3: 'BLR', fips: 'BO',country: 'Belarus', continent: 'EU', currency_code:'BYR', currency_name:'Ruble', phone_prefix:'375', postal_code: '^(d{6})$', languages:'be,ru', geonameid:'630336',
+    # #population: '9,685,00', area_km2: '207,600', gdp_dallar_usd: '69.24 Billion')
+	# TypCountry.create(id: 116, iso: 'KH', iso3: 'KHM', fips: 'CB',country: 'Cambodia', continent:'AS', currency_code:'KHR', currency_name:'Riels', phone_prefix:'855', postal_code: '^(d{5})$', languages:'km,fr,en', geonameid:'1831722',
+    # #population: '14,453,680', area_km2: '181,040', gdp_dallar_usd: '15.64 Billion')
+	# TypCountry.create(id: 120, iso: 'CM', iso3: 'CMR', fips: 'CM',country: 'Cameroon', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'237', postal_code:'', languages:'en-CM,fr-CM', geonameid:'2233387',
+    # #population: '19,294,149', area_km2: '475,440', gdp_dallar_usd: '27.88 Billion')
+    #
+    #
+    #
+    #
+	# TypCountry.create(id: 124, iso: 'CA', iso3: 'CAN', fips: 'CA',country: 'Canada', continent:'NA', currency_code:'CAD', currency_name:'Dollar', phone_prefix:'1', postal_code: '^([a-zA-Z]d[a-zA-Z]d[a-zA-Z]d)$', languages:'en-CA,fr-CA', gpopulation: '33,679,000', area_km2: '9,984,670', gdp_dallar_usd: '1.825 Trillion')
+	# TypCountry.create(id: 132, iso: 'CV', iso3: 'CPV', fips: 'CV',country: 'Cape Verde', continent:'AF', currency_code:'CVE', currency_name:'Escudo', phone_prefix:'238', postal_code: '^(d{4})$', languages:'pt-CV', geonameid:'3374766',
+    # #population: '508,659', area_km2: '4,033', gdp_dallar_usd: '1.955 Billion')
+	# TypCountry.create(id: 136, iso: 'KY', iso3: 'CYM', fips: 'CJ',country: 'Cayman Islands', continent:'NA', currency_code:'KYD', currency_name:'Dollar', phone_prefix:'+1-345', postal_code:'', languages:'en-KY', geonameid:'3580718',
+    # #population: '44,270', area_km2: '262', gdp_dallar_usd: '2.25 Billion')
+	# TypCountry.create(id: 140, iso: 'CF', iso3: 'CAF', fips: 'CT',country: 'Central African Republic', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'236', postal_code:'', languages:'fr-CF,ln,kg', geonameid:'239880',
+    # #population: '4,844,927', area_km2: '622,984', gdp_dallar_usd: '2.05 Billion')
+	# ## TypCountry.create(id: 144, iso: 'LK', iso3: 'LKA', fips: 'CE',country: 'Sri Lanka', continent:'AS', currency_code:'LKR', currency_name:'Rupee', phone_prefix:'94', postal_code: '^(d{5})$', languages:'si,ta,en', geonameid:'1227603',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 148, iso: 'TD', iso3: 'TCD', fips: 'CD',country: 'Chad', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'235', postal_code:'', languages:'fr-TD,ar-TD,sre', geonameid:'2434508',
+    # #population: '10,543,464', area_km2: '1,284,000', gdp_dallar_usd: '13,59 Billion')
+	# TypCountry.create(id: 152, iso: 'CL', iso3: 'CHL', fips: 'CI',country: 'Chile', continent:'SA', currency_code:'CLP', currency_name:'Peso', phone_prefix:'56', postal_code: '^(d{7})$', languages:'es-CL', geonameid:'3895114',
+    # #population: '16,746,491', area_km2: '756,950', gdp_dallar_usd: '281.7 Billion')
+	# TypCountry.create(id: 156, iso: 'CN', iso3: 'CHN', fips: 'CH',country: 'China', continent:'AS', currency_code:'CNY', currency_name:'Yuan Renminbi', phone_prefix:'86', postal_code: '^(d{6})$', languages:'zh-CN,yue,wuu', geonameid:'1814991',
+    # #population: '1,330,044,000', area_km2: '9,596,960', gdp_dallar_usd: '9.33 Trillion')
+	# ### TypCountry.create(id: 158, iso: 'TW', iso3: 'TWN', fips: 'TW',country: 'Taiwan', continent:'AS', currency_code:'TWD', currency_name:'Dollar', phone_prefix:'886', postal_code: '^(d{5})$', languages:'zh-TW,zh,nan,hak', geonameid:'1668284',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 162, iso: 'CX', iso3: 'CXR', fips: 'KT',country: 'Christmas Island', continent:'AS', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'61', postal_code: '^(d{4})$', languages:'en,zh,ms-CC', geonameid:'2078138',
+    # #population: '1,500', area_km2: '135', gdp_dallar_usd: '0')
+	# TypCountry.create(id: 166, iso: 'CC', iso3: 'CCK', fips: 'CK',country: 'Cocos Islands', continent:'AS', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'61', postal_code:'', languages:'ms-CC,en', geonameid:'1547376',
+    # #population: '628', area_km2: '14', gdp_dallar_usd: '0')
+	# TypCountry.create(id: 170, iso: 'CO', iso3: 'COL', fips: 'CO',country: 'Colombia', continent:'SA', currency_code:'COP', currency_name:'Peso', phone_prefix:'57', postal_code:'', languages:'es-CO', geonameid:'3686110',
+    # #population: '47,790,000', area_km2: '1,138,910', gdp_dallar_usd: '369.2 Billion')
+	# TypCountry.create(id: 174, iso: 'KM', iso3: 'COM', fips: 'CN',country: 'Comoros', continent:'AF', currency_code:'KMF', currency_name:'Franc', phone_prefix:'269', postal_code:'', languages:'ar,fr-KM', geonameid:'921929',
+    # #population:'773,407', area_km2: '2,170')
+    # ##TypCountry.created(id: 176, iso:'', iso3: '', fips: '', country: 'Mayotte', continent:'AF', currency_code:'EUR', currency_name:'Euro', phone_prefix:'269', postal_code: '^(d{5})$', languages:'fr-YT', geonameid:'1024031',
+    # #population: '', area_km2: '', gdp_dallar_usd: '0')
+	# ## TypCountry.create(id: 178, iso: 'CG', iso3: 'COG', fips: 'CF',country: 'Republic of the Congo', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'242', postal_code:'', languages:'fr-CG,kg,ln-CG', geonameid:'2260494',
+    # #population: '', area_km2: '', gdp_dallar_usd: '0')
+	# ###TypCountry.create(id: 180, iso: 'CD', iso3: 'COD', fips: 'CG',country: 'Democratic Republic of the Congo', continent:'AF', currency_code:'CDF', currency_name:'Franc', phone_prefix:'243', postal_code:'', languages:'fr-CD,ln,kg', geonameid:'203312',
+    # #population: '70,916,439', area_km2: '2,345,410', gdp_dallar_usd: '18,56 Billion')
+	# TypCountry.create(id: 184, iso: 'CK', iso3: 'COK', fips: 'CW',country: 'Cook Islands', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'682', postal_code:'', languages:'en-CK,mi', geonameid:'1899402',
+    # #population: '21,388', area_km2: '240', gdp_dallar_usd: '183.2 Million')
+	# TypCountry.create(id: 188, iso: 'CR', iso3: 'CRI', fips: 'CS',country: 'Costa Rica', continent:'NA', currency_code:'CRC', currency_name:'Colon', phone_prefix:'506', postal_code: '^(d{4})$', languages:'es-CR,en', geonameid:'3624060',
+    # #population: '4,516,220', area_km2: '51,100', gdp_dallar_usd: '38.51 Billion')
+	# TypCountry.create(id: 191, iso: 'HR', iso3: 'HRV', fips: 'HR',country: 'Croatia', continent:'EU', currency_code:'HRK', currency_name:'Kuna', phone_prefix:'385', postal_code: '^(?:HR)*(d{5})$', languages:'hr-HR,sr', geonameid:'3202326',
+    # #population: '4,491,000', area_km2: '56,542', gdp_dallar_usd: '59.14 Billion')
+	# ## TypCountry.create(id: 192, iso: 'CU', iso3: 'CUB', fips: 'CU',country: 'Cuba', continent:'NA', currency_code:'CUP', currency_name:'Peso', phone_prefix:'53', postal_code: '^(?:CP)*(d{5})$', languages:'es-CU', gpopulation: '11,423,000', area_km2: '110,860', gdp_dallar_usd: '72.3 Billion',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 196, iso: 'CY', iso3: 'CYP', fips: 'CY',country: 'Cyprus', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'357', postal_code: '^(d{4})$', languages:'el-CY,tr-CY,en', geonameid:'146669',
+    # #population: '1,102,677', area_km2: '9,250', gdp_dallar_usd: '21.78 Billion')
+	# TypCountry.create(id: 203, iso: 'CZ', iso3: 'CZE', fips: 'EZ',country: 'Czech Republic', continent:'EU', currency_code:'CZK', currency_name:'Koruna', phone_prefix:'420', postal_code: '^(d{5})$', languages:'cs,sk', geonameid:'3077311',
+    # #population: '10,476,000', area_km2: '78,866', gdp_dallar_usd: '194.8 Billion')
+    #
+    #
+    #
+    #
+	# TypCountry.create(id: 204, iso: 'BJ', iso3: 'BEN', fips: 'BN',country: 'Benin', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'229', postal_code:'', languages:'fr-BJ', geonameid:'2395170',
+    # #population: '9,056,010', area_km2: '112,620', gdp_dallar_usd: '8.359 Billion')
+    #
+    #
+	# TypCountry.create(id: 208, iso: 'DK', iso3: 'DNK', fips: 'DA',country: 'Denmark', continent:'EU', currency_code:'DKK', currency_name:'Krone', phone_prefix:'45', postal_code: '^(d{4})$', languages:'da-DK,en,fo,de-DK', geonameid:'2623032',
+    # #population: '5,484,000', area_km2: '43,094', gdp_dallar_usd: '324.3 Billion')
+	# TypCountry.create(id: 212, iso: 'DM', iso3: 'DMA', fips: 'DO',country: 'Dominica', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-767', postal_code:'', languages:'en-DM', geonameid:'3575830',
+    # #population: '72,813', area_km2: '754', gdp_dallar_usd: '495 Million')
+	# TypCountry.create(id: 214, iso: 'DO', iso3: 'DOM', fips: 'DR',country: 'Dominican Republic', continent:'NA', currency_code:'DOP', currency_name:'Peso', phone_prefix:'+1-809 and 1-829', postal_code: '^(d{5})$', languages:'es-DO', geonameid:'3508796',
+    # #population: '9,823,821', area_km2: '48,730', gdp_dallar_usd: '59.27 Billion')
+    #
+    #                 #east Timor, egypt, el salvador, equatorail guinea, has not yet seen
+    #
+	# TypCountry.create(id: 218, iso: 'EC', iso3: 'ECU', fips: 'EC',country: 'Ecuador', continent:'SA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'593', postal_code: '^([a-zA-Z]d{4}[a-zA-Z])$', languages:'es-EC', geonameid:'3658394',
+    # #population: '14,790,608', area_km2: '283,560', gdp_dallar_usd: '91.41 Billion')
+	# TypCountry.create(id: 222, iso: 'SV', iso3: 'SLV', fips: 'ES',country: 'El Salvador', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'503', postal_code: '^(?:CP)*(d{4})$', languages:'es-SV', geonameid:'3585968',
+    # #population:  '6,052,064', area_km2: '21,040', gdp_dallar_usd: '24.67 Billion')
+	# TypCountry.create(id: 226, iso: 'GQ', iso3: 'GNQ', fips: 'EK',country: 'Equatorial Guinea', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'240', postal_code:'', languages:'es-GQ,fr', geonameid:'2309096',
+    # #population:  '1,014,999', area_km2: '28,051', gdp_dallar_usd: '17.08 Billion')
+	# TypCountry.create(id: 231, iso: 'ET', iso3: 'ETH', fips: 'ET',country: 'Ethiopia', continent:'AF', currency_code:'ETB', currency_name:'Birr', phone_prefix:'251', postal_code: '^(d{4})$', languages:'am,en-ET,om-ET,ti-ET,so-ET,sid', geonameid:'337996',
+    # #population:  '88,013,491', area_km2: '1,127,127', gdp_dallar_usd: '47.34 Billion')
+	# TypCountry.create(id: 232, iso: 'ER', iso3: 'ERI', fips: 'ER',country: 'Eritrea', continent:'AF', currency_code:'ERN', currency_name:'Nakfa', phone_prefix:'291', postal_code:'', languages:'aa-ER,ar,tig,kun,ti-ER', geonameid:'338010',
+    # #population:  '5,792,984', area_km2: '121,320', gdp_dallar_usd: '3,438 Billion')
+	# TypCountry.create(id: 233, iso: 'EE', iso3: 'EST', fips: 'EN',country: 'Estonia', continent:'EU', currency_code:'EEK', currency_name:'Kroon', phone_prefix:'372', postal_code: '^(d{5})$', languages:'et,ru', geonameid:'453733',
+    # #population:  '1,291,170', area_km2: '45,226', gdp_dallar_usd: '24,28 Billion')
+    #
+    #
+    #
+	# TypCountry.create(id: 234, iso: 'FO', iso3: 'FRO', fips: 'FO',country: 'Faroe Islands', continent:'EU', currency_code:'DKK', currency_name:'Krone', phone_prefix:'298', postal_code: '^(?:FO)*(d{3})$', languages:'fo,da-FO', geonameid:'2622320',
+    # #population:  '48,228', area_km2: '1,399', gdp_dallar_usd: '2.32 Billion')
+	# TypCountry.create(id: 238, iso: 'FK', iso3: 'FLK', fips: 'FK',country: 'Falkland Islands', continent:'SA', currency_code:'FKP', currency_name:'Pound', phone_prefix:'500', postal_code:'', languages:'en-FK', geonameid:'3474414',
+    # #population:  '2,638', area_km2: '12,173', gdp_dallar_usd: '164.5 Million')
+	# ### TypCountry.create(id: 239, iso: 'GS', iso3: 'SGS', fips: 'SX',country: 'South Georgia and the South Sandwich Islands', continent:'AN', currency_code:'GBP', currency_name:'Pound', phone_prefix:'', postal_code:'', languages:'en', geonameid:'3474415',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 242, iso: 'FJ', iso3: 'FJI', fips: 'FJ',country: 'Fiji', continent:'OC', currency_code:'FJD', currency_name:'Dollar', phone_prefix:'679', postal_code:'', languages:'en-FJ,fj', geonameid:'2205218',
+    # #population: '875,983', area_km2: '18,270', gdp_dallar_usd: '4.218 Billion')
+	# TypCountry.create(id: 246, iso: 'FI', iso3: 'FIN', fips: 'FI',country: 'Finland', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'358', postal_code: '^(?:FI)*(d{5})$', languages:'fi-FI,sv-FI,smn', geonameid:'660013',
+    # #population: '5,224,000', area_km2: '337,030', gdp_dallar_usd: '259.6 Billion')
+	# ### TypCountry.create(id: 248, iso: 'AX', iso3: 'ALA', fips: '',country: 'Aland Islands', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'+358-18', postal_code:'', languages:'sv-AX', geonameid:'661882',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 250, iso: 'FR', iso3: 'FRA', fips: 'FR',country: 'France', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'33', postal_code: '^(d{5})$', languages:'fr-FR,frp,br,co,ca,eu', geonameid:'3017382',
+    # #population: '64,768,389', area_km2: '547,030', gdp_dallar_usd: '2.739 Trillion')
+	# ### TypCountry.create(id: 254, iso: 'GF', iso3: 'GUF', fips: 'FG',country: 'French Guiana', continent:'SA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'594', postal_code: '^((97)|(98)3d{2})$', languages:'fr-GF', geonameid:'3381670',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 258, iso: 'PF', iso3: 'PYF', fips: 'FP',country: 'French Polynesia', continent:'OC', currency_code:'XPF', currency_name:'Franc', phone_prefix:'689', postal_code: '^((97)|(98)7d{2})$', languages:'fr-PF,ty', geonameid:'4020092',
+    # #population: '270,485', area_km2: '4,167', gdp_dallar_usd: '5.65 Billion')
+	# ### TypCountry.create(id: 260, iso: 'TF', iso3: 'ATF', fips: 'FS',country: 'French Southern Territories', continent:'AN', currency_code:'EUR', currency_name:'Euro  ', phone_prefix:'', postal_code:'', languages:'fr', geonameid:'1546748',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ## TypCountry.create(id: 262, iso: 'DJ', iso3: 'DJI', fips: 'DJ',country: 'Djibouti', continent:'AF', currency_code:'DJF', currency_name:'Franc', phone_prefix:'253', postal_code:'', languages:'fr-DJ,ar,so-DJ,aa', geonameid:'223816',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+    #
+    #
+    #
+	# TypCountry.create(id: 266, iso: 'GA', iso3: 'GAB', fips: 'GB',country: 'Gabon', continent:'AF', currency_code:'XAF', currency_name:'Franc', phone_prefix:'241', postal_code:'', languages:'fr-GA', geonameid:'2400553',
+    # #population: '1,545,255', area_km2: '267,667', gdp_dallar_usd: '19.97 Billion')
+	# TypCountry.create(id: 268, iso: 'GE', iso3: 'GEO', fips: 'GG',country: 'Georgia', continent:'AS', currency_code:'GEL', currency_name:'Lari', phone_prefix:'995', postal_code: '^(d{4})$', languages:'ka,ru,hy,az', geonameid:'614540',
+    # #population: '4,630,000', area_km2: '69,700', gdp_dallar_usd: '15.95 Billion')
+	# TypCountry.create(id: 270, iso: 'GM', iso3: 'GMB', fips: 'GA',country: 'Gambia', continent:'AF', currency_code:'GMD', currency_name:'Dalasi', phone_prefix:'220', postal_code:'', languages:'en-GM,mnk,wof,wo,ff', geonameid:'2413451',
+    # #population: '1,593,256', area_km2: '11,300', gdp_dallar_usd: '896 Million')
+	# ### TypCountry.create(id: 275, iso: 'PS', iso3: 'PSE', fips: 'WE',country: 'Palestinian Territory', continent:'AS', currency_code:'ILS', currency_name:'Shekel', phone_prefix:'970', postal_code:'', languages:'ar-PS', geonameid:'6254930',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 276, iso: 'DE', iso3: 'DEU', fips: 'GM',country: 'Germany', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'49', postal_code: '^(d{5})$', languages:'de', geonameid:'2921044',
+    # #population: '81,802,257', area_km2: '357,021', gdp_dallar_usd: '3.593 Trillion')
+	# TypCountry.create(id: 288, iso: 'GH', iso3: 'GHA', fips: 'GH',country: 'Ghana', continent:'AF', currency_code:'GHS', currency_name:'Cedi', phone_prefix:'233', postal_code:'', languages:'en-GH,ak,ee,tw', geonameid:'2300660',
+    # #population: '24,339,838', area_km2: '239,460', gdp_dallar_usd: '45.55 Billion')
+	# TypCountry.create(id: 292, iso: 'GI', iso3: 'GIB', fips: 'GI',country: 'Gibraltar', continent:'EU', currency_code:'GIP', currency_name:'Pound', phone_prefix:'350', postal_code:'', languages:'en-GI,es,it,pt', geonameid:'2411586',
+    # #population: '27,884', area_km2: '7', gdp_dallar_usd: '1.106 Billion')
+	# ## TypCountry.create(id: 296, iso: 'KI', iso3: 'KIR', fips: 'KR',country: 'Kiribati', continent:'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'686', postal_code:'', languages:'en-KI,gil', geonameid:'4030945',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 300, iso: 'GR', iso3: 'GRC', fips: 'GR',country: 'Greece', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'30', postal_code: '^(d{5})$', languages:'el-GR,en,fr', geonameid:'390903',
+    # #population: '11,000,000', area_km2: '131,940', gdp_dallar_usd: '243.3 Billion')
+	# TypCountry.create(id: 304, iso: 'GL', iso3: 'GRL', fips: 'GL',country: 'Greenland', continent:'NA', currency_code:'DKK', currency_name:'Krone', phone_prefix:'299', postal_code: '^(d{4})$', languages:'kl,da-GL,en', geonameid:'3425505',
+    # #population: '56,375', area_km2: '2,166,086', gdp_dallar_usd: '2.16 Billion')
+	# TypCountry.create(id: 308, iso: 'GD', iso3: 'GRD', fips: 'GJ',country: 'Grenada', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-473', postal_code:'', languages:'en-GD', geonameid:'3580239',
+    # #population: '107,818', area_km2: '344', gdp_dallar_usd: '811 Million')
+	# ### TypCountry.create(id: 312, iso: 'GP', iso3: 'GLP', fips: 'GP',country: 'Guadeloupe', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'590', postal_code: '^((97)|(98)d{3})$', languages:'fr-GP', geonameid:'3579143',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 316, iso: 'GU', iso3: 'GUM', fips: 'GQ',country: 'Guam', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-671', postal_code: '^(969d{2})$', languages:'en-GU,ch-GU', geonameid:'4043988',
+    # #population: '159,358', area_km2: '549', gdp_dallar_usd: '4.6 Billion')
+	# TypCountry.create(id: 320, iso: 'GT', iso3: 'GTM', fips: 'GT',country: 'Guatemala', continent:'NA', currency_code:'GTQ', currency_name:'Quetzal', phone_prefix:'502', postal_code: '^(d{5})$', languages:'es-GT', geonameid:'3595528',
+    # #population: '13,550,440', area_km2: '108,890', gdp_dallar_usd: '53.9 Billion')
+	# TypCountry.create(id: 324, iso: 'GN', iso3: 'GIN', fips: 'GV',country: 'Guinea', continent:'AF', currency_code:'GNF', currency_name:'Franc', phone_prefix:'224', postal_code:'', languages:'fr-GN', geonameid:'2420477',
+    # #population: '10,324,025', area_km2: '245,857', gdp_dallar_usd: '6.544 Billion')
+	# TypCountry.create(id: 328, iso: 'GY', iso3: 'GUY', fips: 'GY',country: 'Guyana', continent:'SA', currency_code:'GYD', currency_name:'Dollar', phone_prefix:'592', postal_code:'', languages:'en-GY', geonameid:'3378535',
+    # #population: '748,486', area_km2: '214,970', gdp_dallar_usd: '214,970')
+    #
+    #
+    #
+	# TypCountry.create(id: 332, iso: 'HT', iso3: 'HTI', fips: 'HA',country: 'Haiti', continent:'NA', currency_code:'HTG', currency_name:'Gourde', phone_prefix:'509', postal_code: '^(?:HT)*(d{4})$', languages:'ht,fr-HT', geonameid:'3723988',
+    # #population: '9,648,924', area_km2: '27,750', gdp_dallar_usd: '8.287 Billion')
+	# TypCountry.create(id: 334, iso: 'HM', iso3: 'HMD', fips: 'HM',country: 'Heard Island and McDonald Islands', continent:'AN', currency_code:'AUD', currency_name:'Dollar', phone_prefix:' ', postal_code:'', languages:'', geonameid:'1547314',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ## TypCountry.create(id: 336, iso: 'VA', iso3: 'VAT', fips: 'VT',country: 'Vatican', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'379', postal_code:'', languages:'la,it,fr', geonameid:'3164670',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 340, iso: 'HN', iso3: 'HND', fips: 'HO',country: 'Honduras', continent:'NA', currency_code:'HNL', currency_name:'Lempira', phone_prefix:'504', postal_code: '^([A-Z]{2}d{4})$', languages:'es-HN', geonameid:'3608932',
+    # #population: '7,989,415', area_km2: '112,090	', gdp_dallar_usd: '18.88 Billion')
+	# TypCountry.create(id: 344, iso: 'HK', iso3: 'HKG', fips: 'HK',country: 'Hong Kong', continent:'AS', currency_code:'HKD', currency_name:'Dollar', phone_prefix:'852', postal_code:'', languages:'zh-HK,yue,zh,en', geonameid:'1819730',
+    # #population: '6,898,686', area_km2: '1,092', gdp_dallar_usd: '272.1 Billion')
+	# TypCountry.create(id: 348, iso: 'HU', iso3: 'HUN', fips: 'HU',country: 'Hungary', continent:'EU', currency_code:'HUF', currency_name:'Forint', phone_prefix:'36', postal_code: '^(d{4})$', languages:'hu-HU', geonameid:'719819',
+    # #population: '9,982,000', area_km2: '93,030', gdp_dallar_usd: '93,030')
+    #
+    #
+    #
+	# TypCountry.create(id: 352, iso: 'IS', iso3: 'ISL', fips: 'IC',country: 'Iceland', continent:'EU', currency_code:'ISK', currency_name:'Krona', phone_prefix:'354', postal_code: '^(d{3})$', languages:'is,en,de,da,sv,no', geonameid:'2629691',
+    # #population: '308,910', area_km2: '103,000', gdp_dallar_usd: '14.59 Billion')
+	# TypCountry.create(id: 356, iso: 'IN', iso3: 'IND', fips: 'IN',country: 'India', continent:'AS', currency_code:'INR', currency_name:'Rupee', phone_prefix:'91', postal_code: '^(d{6})$', languages:'en-IN,hi,bn,te,mr,ta,ur,gu,ml,kn,or,pa,as,ks,', geonameid:'1269750',
+    # #population: '1,173,108,018', area_km2: '3,287,590', gdp_dallar_usd: '1.67 Trillion')
+	# TypCountry.create(id: 360, iso: 'ID', iso3: 'IDN', fips: 'ID',country: 'Indonesia', continent:'AS', currency_code:'IDR', currency_name:'Rupiah', phone_prefix:'62', postal_code: '^(d{5})$', languages:'id,en,nl,jv', geonameid:'1643084',
+    # #population: '242,968,342', area_km2: '1,919,440', gdp_dallar_usd: '867.5 Billion')
+	# TypCountry.create(id: 364, iso: 'IR', iso3: 'IRN', fips: 'IR',country: 'Iran', continent:'AS', currency_code:'IRR', currency_name:'Rial', phone_prefix:'98', postal_code: '^(d{10})$', languages:'fa-IR,ku', geonameid:'130758',
+    # #population: '76,923,300', area_km2: '1,648,000', gdp_dallar_usd: '411.9 Billion')
+	# TypCountry.create(id: 368, iso: 'IQ', iso3: 'IRQ', fips: 'IZ',country: 'Iraq', continent:'AS', currency_code:'IQD', currency_name:'Dinar', phone_prefix:'964', postal_code: '^(d{5})$', languages:'ar-IQ,ku,hy', geonameid:'99237',
+    # #population: '29,671,605', area_km2: '437,072', gdp_dallar_usd: '221.8 Billion')
+	# TypCountry.create(id: 372, iso: 'IE', iso3: 'IRL', fips: 'EI',country: 'Ireland', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'353', postal_code:'', languages:'en-IE,ga-IE', geonameid:'2963597',
+    # #population: '4,622,917', area_km2: '70,280', gdp_dallar_usd: '220.9 Billion')
+	# TypCountry.create(id: 376, iso: 'IL', iso3: 'ISR', fips: 'IS',country: 'Israel', continent:'AS', currency_code:'ILS', currency_name:'Shekel', phone_prefix:'972', postal_code: '^(d{5})$', languages:'he,ar-IL,en-IL,', geonameid:'294640',
+    # #population: '7,353,985', area_km2: '20,770', gdp_dallar_usd: '272.7 Billion')
+	# TypCountry.create(id: 380, iso: 'IT', iso3: 'ITA', fips: 'IT',country: 'Italy', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'39', postal_code: '^(d{5})$', languages:'it-IT,de-IT,fr-IT,sl', geonameid:'3175395',
+    # #population: '60,340,328', area_km2: '301,230', gdp_dallar_usd: '2.068 Trillion')
+	# TypCountry.create(id: 384, iso: 'CI', iso3: 'CIV', fips: 'IV',country: 'Ivory Coast', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'225', postal_code:'', languages:'fr-CI', geonameid:'2287781',
+    # #population: '21,058,798', area_km2: '322,460', gdp_dallar_usd: '28.28 Billion')
+    #
+    #
+    #
+    #
+	# TypCountry.create(id: 388, iso: 'JM', iso3: 'JAM', fips: 'JM',country: 'Jamaica', continent:'NA', currency_code:'JMD', currency_name:'Dollar', phone_prefix:'+1-876', postal_code:'', languages:'en-JM', geonameid:'3489940',
+    # #population: '2,847,232', area_km2: '10,991', gdp_dallar_usd: '14.39 Billion')
+	# TypCountry.create(id: 392, iso: 'JP', iso3: 'JPN', fips: 'JA',country: 'Japan', continent:'AS', currency_code:'JPY', currency_name:'Yen', phone_prefix:'81', postal_code: '^(d{7})$', languages:'ja', geonameid:'1861060',
+    # #population: '127,288,000', area_km2: '	377,835', gdp_dallar_usd: '5.007 Trillion')
+    #
+    #
+	# TypCountry.create(id: 398, iso: 'KZ', iso3: 'KAZ', fips: 'KZ',country: 'Kazakhstan', continent:'AS', currency_code:'KZT', currency_name:'Tenge', phone_prefix:'7', postal_code: '^(d{6})$', languages:'kk,ru', geonameid:'1522867',
+    # #population: '15,340,000', area_km2: '2,717,300', gdp_dallar_usd: '224.9 Billion')
+	# ### TypCountry.create(id: 400, iso: 'JO', iso3: 'JOR', fips: 'JO',country: 'Jordan', continent:'AS', currency_code:'JOD', currency_name:'Dinar', phone_prefix:'962', postal_code: '^(d{5})$', languages:'ar-JO,en', geonameid:'248816',
+    # #population: '6,407,085', area_km2: '92,300', gdp_dallar_usd: '34.08 Billion')
+	# TypCountry.create(id: 404, iso: 'KE', iso3: 'KEN', fips: 'KE',country: 'Kenya', continent:'AF', currency_code:'KES', currency_name:'Shilling', phone_prefix:'254', postal_code: '^(d{5})$', languages:'en-KE,sw-KE', geonameid:'192950',
+    # #population: '40,046,566', area_km2: '582,650', gdp_dallar_usd: '45.31 Billion')
+	# ### TypCountry.create(id: 408, iso: 'KP', iso3: 'PRK', fips: 'KN',country: 'North Korea', continent:'AS', currency_code:'KPW', currency_name:'Won', phone_prefix:'850', postal_code: '^(d{6})$', languages:'ko-KP', geonameid:'1873107',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 410, iso: 'KR', iso3: 'KOR', fips: 'KS',country: 'South Korea', continent:'AS', currency_code:'KRW', currency_name:'Won', phone_prefix:'82', postal_code: '^(?:SEOUL)*(d{6})$', languages:'ko-KR,en', geonameid:'1835841',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 414, iso: 'KW', iso3: 'KWT', fips: 'KU',country: 'Kuwait', continent:'AS', currency_code:'KWD', currency_name:'Dinar', phone_prefix:'965', postal_code: '^(d{5})$', languages:'ar-KW,en', geonameid:'285570',
+    # #population: '2,789,132', area_km2: '17,820', gdp_dallar_usd: '179.5 Billion')
+	# TypCountry.create(id: 417, iso: 'KG', iso3: 'KGZ', fips: 'KG',country: 'Kyrgyzstan', continent:'AS', currency_code:'KGS', currency_name:'Som', phone_prefix:'996', postal_code: '^(d{6})$', languages:'ky,uz,ru', geonameid:'1527747',
+    # #population: '5,508,626', area_km2: '198,500', gdp_dallar_usd: '7.234 Billion')
+    #
+    #
+    #
+    #
+    #
+	# TypCountry.create(id: 418, iso: 'LA', iso3: 'LAO', fips: 'LA',country: 'Laos', continent:'AS', currency_code:'LAK', currency_name:'Kip', phone_prefix:'856', postal_code: '^(d{5})$', languages:'lo,fr,en', geonameid:'1655842',
+    # #population: '6,368,162', area_km2: '236,800', gdp_dallar_usd: '10.1 Billion')
+	# TypCountry.create(id: 422, iso: 'LB', iso3: 'LBN', fips: 'LE',country: 'Lebanon', continent:'AS', currency_code:'LBP', currency_name:'Pound', phone_prefix:'961', postal_code: '^(d{4}(d{4})?)$', languages:'ar-LB,fr-LB,en,hy', geonameid:'272103',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 426, iso: 'LS', iso3: 'LSO', fips: 'LT',country: 'Lesotho', continent:'AF', currency_code:'LSL', currency_name:'Loti', phone_prefix:'266', postal_code: '^(d{3})$', languages:'en-LS,st,zu,xh', geonameid:'932692',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 428, iso: 'LV', iso3: 'LVA', fips: 'LG',country: 'Latvia', continent:'EU', currency_code:'LVL', currency_name:'Lat', phone_prefix:'371', postal_code: '^(?:LV)*(d{4})$', languages:'lv,ru,lt', geonameid:'458258',
+    # #population: '2,217,969', area_km2: '64,589', gdp_dallar_usd: '30.38 Billion')
+	# TypCountry.create(id: 430, iso: 'LR', iso3: 'LBR', fips: 'LI',country: 'Liberia', continent:'AF', currency_code:'LRD', currency_name:'Dollar', phone_prefix:'231', postal_code: '^(d{4})$', languages:'en-LR', geonameid:'2275384',
+    # #population: '3,685,076', area_km2: '111,370', gdp_dallar_usd: '1.977 Billion')
+	# TypCountry.create(id: 434, iso: 'LY', iso3: 'LBY', fips: 'LY',country: 'Libya', continent:'AF', currency_code:'LYD', currency_name:'Dinar', phone_prefix:'218', postal_code:'', languages:'ar-LY,it,en', geonameid:'2215636',
+    # #population: '6,461,454', area_km2: '1,759,540', gdp_dallar_usd: '70.92 Billion')
+	# TypCountry.create(id: 438, iso: 'LI', iso3: 'LIE', fips: 'LS',country: 'Liechtenstein', continent:'EU', currency_code:'CHF', currency_name:'Franc', phone_prefix:'423', postal_code: '^(d{4})$', languages:'de-LI', geonameid:'3042058',
+    # #population: '35,000', area_km2: '160', gdp_dallar_usd: '5.113 Billion')
+	# TypCountry.create(id: 440, iso: 'LT', iso3: 'LTU', fips: 'LH',country: 'Lithuania', continent:'EU', currency_code:'LTL', currency_name:'Litas', phone_prefix:'370', postal_code: '^(?:LT)*(d{5})$', languages:'lt,ru,pl', geonameid:'597427',
+    # #population: '2,944,459', area_km2: '65,200', gdp_dallar_usd: '46.71 Billion')
+	# TypCountry.create(id: 442, iso: 'LU', iso3: 'LUX', fips: 'LU',country: 'Luxembourg', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'352', postal_code: '^(d{4})$', languages:'lb,de-LU,fr-LU', geonameid:'2960313',
+    # #population: '497,538', area_km2: '2,586', gdp_dallar_usd: '60.54 Billion')
+    #
+    #
+    #
+	# TypCountry.create(id: 446, iso: 'MO', iso3: 'MAC', fips: 'MC',country: 'Macau', continent:'AS', currency_code:'MOP', currency_name:'Pataca', phone_prefix:'853', postal_code:'', languages:'zh,zh-MO', geonameid:'1821275',
+    # #population: '449,198', area_km2: '254', gdp_dallar_usd: '51.68 Billion')
+	# TypCountry.create(id: 450, iso: 'MG', iso3: 'MDG', fips: 'MA',country: 'Madagascar', continent:'AF', currency_code:'MGA', currency_name:'Ariary', phone_prefix:'261', postal_code: '^(d{3})$', languages:'fr-MG,mg', geonameid:'1062947',
+    # #population: '21,281,844', area_km2: '587,040', gdp_dallar_usd: '10.53 Billion')
+	# TypCountry.create(id: 454, iso: 'MW', iso3: 'MWI', fips: 'MI',country: 'Malawi', continent:'AF', currency_code:'MWK', currency_name:'Kwacha', phone_prefix:'265', postal_code:'', languages:'ny,yao,tum,swk', geonameid:'927384',
+    # #population: '15,447,500', area_km2: '118,480', gdp_dallar_usd: '3.683 Billion')
+	# TypCountry.create(id: 458, iso: 'MY', iso3: 'MYS', fips: 'MY',country: 'Malaysia', continent:'AS', currency_code:'MYR', currency_name:'Ringgit', phone_prefix:'60', postal_code: '^(d{5})$', languages:'ms-MY,en,zh,ta,te,ml,pa,th', geonameid:'1733045',
+    # #population: '28,274,729', area_km2: '329,750', gdp_dallar_usd: '312.4 Billion')
+	# TypCountry.create(id: 462, iso: 'MV', iso3: 'MDV', fips: 'MV',country: 'Maldives', continent:'AS', currency_code:'MVR', currency_name:'Rufiyaa', phone_prefix:'960', postal_code: '^(d{5})$', languages:'dv,en', geonameid:'1282028',
+    # #population: '395,650', area_km2: '300', gdp_dallar_usd: '2.27 Billion')
+	# TypCountry.create(id: 466, iso: 'ML', iso3: 'MLI', fips: 'ML',country: 'Mali', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'223', postal_code:'', languages:'fr-ML,bm', geonameid:'2453866',
+    # #population: '13,796,354', area_km2: '1,240,000', gdp_dallar_usd: '11.37 Billion')
+	# TypCountry.create(id: 470, iso: 'MT', iso3: 'MLT', fips: 'MT',country: 'Malta', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'356', postal_code: '^([A-Z]{3}d{2}d?)$', languages:'mt,en-MT', geonameid:'2562770',
+    # #population: '403,000', area_km2: '316', gdp_dallar_usd: '9.541 Billion')
+	# ### TypCountry.create(id: 474, iso: 'MQ', iso3: 'MTQ', fips: 'MB',country: 'Martinique', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'596', postal_code: '^(d{5})$', languages:'fr-MQ', geonameid:'3570311',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 478, iso: 'MR', iso3: 'MRT', fips: 'MR',country: 'Mauritania', continent:'AF', currency_code:'MRO', currency_name:'Ouguiya', phone_prefix:'222', postal_code:'', languages:'ar-MR,fuc,snk,fr,mey,wo', geonameid:'2378080',
+    # #population: '3,205,060', area_km2: '1,030,700', gdp_dallar_usd: '4.183 Billion')
+	# TypCountry.create(id: 480, iso: 'MU', iso3: 'MUS', fips: 'MP',country: 'Mauritius', continent:'AF', currency_code:'MUR', currency_name:'Rupee', phone_prefix:'230', postal_code:'', languages:'en-MU,bho,fr', geonameid:'934292',
+    # #population: '1,294,104', area_km2: '2,040', gdp_dallar_usd: '11.9 Billion')
+	# TypCountry.create(id: 484, iso: 'MX', iso3: 'MEX', fips: 'MX',country: 'Mexico', continent:'NA', currency_code:'MXN', currency_name:'Peso', phone_prefix:'52', postal_code: '^(d{5})$', languages:'es-MX', geonameid:'3996063',
+    # #population: '112,468,855', area_km2: '1,972,550', gdp_dallar_usd: '1.327 Trillion')
+	# TypCountry.create(id: 492, iso: 'MC', iso3: 'MCO', fips: 'MN',country: 'Monaco', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'377', postal_code: '^(d{5})$', languages:'fr-MC,en,it', geonameid:'2993457',
+    # #population: '32,965', area_km2: '2', gdp_dallar_usd: '5.748 Billion')
+	# TypCountry.create(id: 496, iso: 'MN', iso3: 'MNG', fips: 'MG',country: 'Mongolia', continent:'AS', currency_code:'MNT', currency_name:'Tugrik', phone_prefix:'976', postal_code: '^(d{6})$', languages:'mn,ru', geonameid:'2029969',
+    # #population: '3,086,918', area_km2: '1,565,000', gdp_dallar_usd: '11.14 Billion')
+	# TypCountry.create(id: 498, iso: 'MD', iso3: 'MDA', fips: 'MD',country: 'Moldova', continent:'EU', currency_code:'MDL', currency_name:'Leu', phone_prefix:'373', postal_code: '^(?:MD)*(d{4})$', languages:'ro,ru,gag,tr', geonameid:'617790',
+    # #population: '4,324,000', area_km2: '33,843', gdp_dallar_usd: '7.932 Billion')
+	# TypCountry.create(id: 499, iso: 'ME', iso3: 'MNE', fips: 'MJ',country: 'Montenegro', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'381', postal_code: '^(d{5})$', languages:'sr,hu,bs,sq,hr,rom', geonameid:'3194884',
+    # #population: '666,730', area_km2: '14,026', gdp_dallar_usd: '4.518 Billion')
+	# TypCountry.create(id: 500, iso: 'MS', iso3: 'MSR', fips: 'MH',country: 'Montserrat', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-664', postal_code:'', languages:'en-MS', geonameid:'3578097',
+    # #population: '9,341', area_km2: '102', gdp_dallar_usd: '')
+	# TypCountry.create(id: 504, iso: 'MA', iso3: 'MAR', fips: 'MO',country: 'Morocco', continent:'AF', currency_code:'MAD', currency_name:'Dirham', phone_prefix:'212', postal_code: '^(d{5})$', languages:'ar-MA,fr', geonameid:'2542007',
+    # #population: '31,627,428', area_km2: '446,550', gdp_dallar_usd: '104.8 Billion')
+	# TypCountry.create(id: 508, iso: 'MZ', iso3: 'MOZ', fips: 'MZ',country: 'Mozambique', continent:'AF', currency_code:'MZN', currency_name:'Meticail', phone_prefix:'258', postal_code: '^(d{4})$', languages:'pt-MZ,vmw', geonameid:'1036973',
+    # #population: '22,061,451', area_km2: '801,590', gdp_dallar_usd: '14.67 Billion')
+    #
+    #
+	# ### TypCountry.create(id: 512, iso: 'OM', iso3: 'OMN', fips: 'MU',country: 'Oman', continent:'AS', currency_code:'OMR', currency_name:'Rial', phone_prefix:'968', postal_code: '^(d{3})$', languages:'ar-OM,en,bal,ur', geonameid:'286963',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 516, iso: 'NA', iso3: 'NAM', fips: 'WA',country: 'Namibia', continent:'AF', currency_code:'NAD', currency_name:'Dollar', phone_prefix:'264', postal_code:'', languages:'en-NA,af,de,hz,naq', geonameid:'3355338',
+    # #population: '2,128,471', area_km2: '825,418', gdp_dallar_usd: '12.3 Billion')
+	# TypCountry.create(id: 520, iso: 'NR', iso3: 'NRU', fips: 'NR',country: 'Nauru', continent:'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'674', postal_code:'', languages:'na,en-NR', geonameid:'2110425',
+    # #population: '10,065', area_km2: '21', gdp_dallar_usd: '')
+	# TypCountry.create(id: 524, iso: 'NP', iso3: 'NPL', fips: 'NP',country: 'Nepal', continent:'AS', currency_code:'NPR', currency_name:'Rupee', phone_prefix:'977', postal_code: '^(d{5})$', languages:'ne,en', geonameid:'1282988',
+    # #population: '28,951,852', area_km2: '140,800', gdp_dallar_usd: '19.34 Billion')
+	# TypCountry.create(id: 528, iso: 'NL', iso3: 'NLD', fips: 'NL',country: 'Netherlands', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'31', postal_code: '^(d{4}[A-Z]{2})$', languages:'nl-NL,fy-NL', geonameid:'2750405',
+    # #population: '16,645,000', area_km2: '41,526', gdp_dallar_usd: '722.3 Billion')
+	# TypCountry.create(id: 530, iso: 'AN', iso3: 'ANT', fips: 'NT',country: 'Netherlands Antilles', continent:'NA', currency_code:'ANG', currency_name:'Guilder', phone_prefix:'599', postal_code:'', languages:'nl-AN,en,es', geonameid:'3513447',
+    # #population: '136,197', area_km2: '960', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 533, iso: 'AW', iso3: 'ABW', fips: 'AA',country: 'Aruba', continent:'NA', currency_code:'AWG', currency_name:'Guilder', phone_prefix:'297', postal_code:'', languages:'nl-AW,es,en', geonameid:'3577279',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 540, iso: 'NC', iso3: 'NCL', fips: 'NC',country: 'New Caledonia', continent:'OC', currency_code:'XPF', currency_name:'Franc', phone_prefix:'687', postal_code: '^(d{5})$', languages:'fr-NC', geonameid:'2139685',
+    # #population: '216,494', area_km2: '19,060', gdp_dallar_usd: '9.28 Billion')
+	# ### TypCountry.create(id: 548, iso: 'VU', iso3: 'VUT', fips: 'NH',country: 'Vanuatu', continent:'OC', currency_code:'VUV', currency_name:'Vatu', phone_prefix:'678', postal_code:'', languages:'bi,en-VU,fr-VU', geonameid:'2134431',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 554, iso: 'NZ', iso3: 'NZL', fips: 'NZ',country: 'New Zealand', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'64', postal_code: '^(d{4})$', languages:'en-NZ,mi', geonameid:'2186224',
+    # #population: '4,252,277', area_km2: '268,680', gdp_dallar_usd: '181.1 Billion')
+	# TypCountry.create(id: 558, iso: 'NI', iso3: 'NIC', fips: 'NU',country: 'Nicaragua', continent:'NA', currency_code:'NIO', currency_name:'Cordoba', phone_prefix:'505', postal_code: '^(d{7})$', languages:'es-NI,en', geonameid:'3617476',
+    # #population: '5,995,928', area_km2: '129,494', gdp_dallar_usd: '11.26 Billion')
+	# TypCountry.create(id: 562, iso: 'NE', iso3: 'NER', fips: 'NG',country: 'Niger', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'227', postal_code: '^(d{4})$', languages:'fr-NE,ha,kr,dje', geonameid:'2440476',
+    # #population: '15,878,271', area_km2: '1,267,000', gdp_dallar_usd: '	7.304 Billion')
+	# TypCountry.create(id: 566, iso: 'NG', iso3: 'NGA', fips: 'NI',country: 'Nigeria', continent:'AF', currency_code:'NGN', currency_name:'Naira', phone_prefix:'234', postal_code: '^(d{6})$', languages:'en-NG,ha,yo,ig,ff', geonameid:'2328926',
+    # #population: '154,000,000', area_km2: '923,768', gdp_dallar_usd: '502 Billion')
+	# TypCountry.create(id: 570, iso: 'NU', iso3: 'NIU', fips: 'NE',country: 'Niue', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'683', postal_code:'', languages:'niu,en-NU', geonameid:'4036232',
+    # #population: '2,166', area_km2: '260', gdp_dallar_usd: '10.01 Million')
+	# TypCountry.create(id: 574, iso: 'NF', iso3: 'NFK', fips: 'NF',country: 'Norfolk Island', continent:'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'672', postal_code:'', languages:'en-NF', geonameid:'2155115',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 578, iso: 'NO', iso3: 'NOR', fips: 'NO',country: 'Norway', continent:'EU', currency_code:'NOK', currency_name:'Krone', phone_prefix:'47', postal_code: '^(d{4})$', languages:'no,nb,nn', geonameid:'3144096',
+    # #population: '5,009,150', area_km2: '324,220', gdp_dallar_usd: '515.8 Billion')
+	# TypCountry.create(id: 580, iso: 'MP', iso3: 'MNP', fips: 'CQ',country: 'Northern Mariana Islands', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-670', postal_code:'', languages:'fil,tl,zh,ch-MP,en-MP', geonameid:'4041467',
+    # #population: '53,883', area_km2: '477', gdp_dallar_usd: '733 Million')
+	# TypCountry.create(id: 581, iso: 'UM', iso3: 'UMI', fips: '', country: 'United States Minor Outlying Islands', continent:'OC', currency_code:'USD', currency_name:'Dollar ', phone_prefix:'', postal_code:'', languages:'en-UM', geonameid:'5854968',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 583, iso: 'FM', iso3: 'FSM', fips: 'FM',country: 'Micronesia', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'691', postal_code: '^(d{5})$', languages:'en-FM,chk,pon,yap,kos,uli,woe,nkr,kpg', geonameid:'2081918',
+    # #population: '107,708', area_km2: '702', gdp_dallar_usd: '339 Million')
+	# ###TypCountry.create(id: 584, iso: 'MH', iso3: 'MHL', fips: 'RM',country: 'Marshall Islands', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'692', postal_code:'', languages:'mh,en-MH', geonameid:'2080185',
+    # #population: '65,859', area_km2: '181', gdp_dallar_usd: '193 Million')
+    #
+    #
+	# TypCountry.create(id: 585, iso: 'PW', iso3: 'PLW', fips: 'PS',country: 'Palau', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'680', postal_code: '^(96940)$', languages:'pau,sov,en-PW,tox,ja,fil,zh', geonameid:'1559582',
+    # #population: '19,907', area_km2: '458', gdp_dallar_usd: '221 Million')
+	# TypCountry.create(id: 586, iso: 'PK', iso3: 'PAK', fips: 'PK',country: 'Pakistan', continent:'AS', currency_code:'PKR', currency_name:'Rupee', phone_prefix:'92', postal_code: '^(d{5})$', languages:'ur-PK,en-PK,pa,sd,ps,brh', geonameid:'1168579',
+    # #population: '184,404,791', area_km2: '803,940', gdp_dallar_usd: '236.5 Billion')
+	# TypCountry.create(id: 591, iso: 'PA', iso3: 'PAN', fips: 'PM',country: 'Panama', continent:'NA', currency_code:'PAB', currency_name:'Balboa', phone_prefix:'507', postal_code:'', languages:'es-PA,en', geonameid:'3703430',
+    # #population: '3,410,676', area_km2: '78,200', gdp_dallar_usd: '40.62 Billion')
+	# TypCountry.create(id: 598, iso: 'PG', iso3: 'PNG', fips: 'PP',country: 'Papua New Guinea', continent:'OC', currency_code:'PGK', currency_name:'Kina', phone_prefix:'675', postal_code: '^(d{3})$', languages:'en-PG,ho,meu,tpi', geonameid:'2088628',
+    # #population: '6,064,515', area_km2: '462,840', gdp_dallar_usd: '16.1 Billion')
+	# TypCountry.create(id: 600, iso: 'PY', iso3: 'PRY', fips: 'PA',country: 'Paraguay', continent:'SA', currency_code:'PYG', currency_name:'Guarani', phone_prefix:'595', postal_code: '^(d{4})$', languages:'es-PY,gn', geonameid:'3437598',
+    # #population: '6,375,830', area_km2: '406,750', gdp_dallar_usd: '30.56 Billion')
+	# TypCountry.create(id: 604, iso: 'PE', iso3: 'PER', fips: 'PE',country: 'Peru', continent:'SA', currency_code:'PEN', currency_name:'Sol', phone_prefix:'51', postal_code:'', languages:'es-PE,qu,ay', geonameid:'3932488',
+    # #population: '29,907,003', area_km2: '1,285,220', gdp_dallar_usd: '210.3 Billion')
+	# TypCountry.create(id: 608, iso: 'PH', iso3: 'PHL', fips: 'RP',country: 'Philippines', continent:'AS', currency_code:'PHP', currency_name:'Peso', phone_prefix:'63', postal_code: '^(d{4})$', languages:'tl,en-PH,fil', geonameid:'1694008',
+    # #population: '99,900,177', area_km2: '300,000', gdp_dallar_usd: '')
+	# TypCountry.create(id: 612, iso: 'PN', iso3: 'PCN', fips: 'PC',country: 'Pitcairn', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'', postal_code:'', languages:'en-PN', geonameid:'4030699',
+    # #population: '46', area_km2: '47', gdp_dallar_usd: '')
+	# TypCountry.create(id: 616, iso: 'PL', iso3: 'POL', fips: 'PL',country: 'Poland', continent:'EU', currency_code:'PLN', currency_name:'Zloty', phone_prefix:'48', postal_code: '^(d{5})$', languages:'pl', geonameid:'798544',
+    # #population: '38,500,000', area_km2: '312,685', gdp_dallar_usd: '513.9 Billion')
+	# TypCountry.create(id: 620, iso: 'PT', iso3: 'PRT', fips: 'PO',country: 'Portugal', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'351', postal_code: '^(d{7})$', languages:'pt-PT,mwl', geonameid:'2264397',
+    # #population: '10,676,000', area_km2: '92,391', gdp_dallar_usd: '219.3 Billion')
+	# ### TypCountry.create(id: 624, iso: 'GW', iso3: 'GNB', fips: 'PU',country: 'Guinea-Bissau', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'245', postal_code: '^(d{4})$', languages:'pt-GW,pov', geonameid:'2372248',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 626, iso: 'TL', iso3: 'TLS', fips: 'TT',country: 'East Timor', continent:'OC', currency_code:'USD', currency_name:'Dollar', phone_prefix:'670', postal_code:'', languages:'tet,pt-TL,id,en', geonameid:'1966436',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 630, iso: 'PR', iso3: 'PRI', fips: 'RQ',country: 'Puerto Rico', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-787 and 1-939', postal_code: '^(d{9})$', languages:'en-PR,es-PR', geonameid:'4566966',
+    # #population: '3,916,632', area_km2: '9,104', gdp_dallar_usd: '93.52 Billion')
+    #
+    #
+	# TypCountry.create(id: 634, iso: 'QA', iso3: 'QAT', fips: 'QA',country: 'Qatar', continent:'AS', currency_code:'QAR', currency_name:'Rial', phone_prefix:'974', postal_code:'', languages:'ar-QA,es', geonameid:'289688',
+    # #population: '840,926', area_km2: '11,437', gdp_dallar_usd: '213.1 Billion')
+    #
+    #
+	# TypCountry.create(id: 638, iso: 'RE', iso3: 'REU', fips: 'RE',country: 'Reunion', continent:'AF', currency_code:'EUR', currency_name:'Euro', phone_prefix:'262', postal_code: '^((97)|(98)(4|7|8)d{2})$', languages:'fr-RE', geonameid:'935317',
+    # #population: '776,948', area_km2: '2,517', gdp_dallar_usd: '')
+	# TypCountry.create(id: 642, iso: 'RO', iso3: 'ROU', fips: 'RO',country: 'Romania', continent:'EU', currency_code:'RON', currency_name:'Leu', phone_prefix:'40', postal_code: '^(d{6})$', languages:'ro,hu,rom', geonameid:'798549',
+    # #population: '21,959,278', area_km2: '237,500', gdp_dallar_usd: '188.9 Billion')
+	# TypCountry.create(id: 643, iso: 'RU', iso3: 'RUS', fips: 'RS',country: 'Russia', continent:'EU', currency_code:'RUB', currency_name:'Ruble', phone_prefix:'7', postal_code: '^(d{6})$', languages:'ru-RU', geonameid:'2017370',
+    # #population: '140,702,000', area_km2: '17,100,000', gdp_dallar_usd: '	2.113 Trillion')
+	# TypCountry.create(id: 646, iso: 'RW', iso3: 'RWA', fips: 'RW',country: 'Rwanda', continent:'AF', currency_code:'RWF', currency_name:'Franc', phone_prefix:'250', postal_code:'', languages:'rw,en-RW,fr-RW,sw', geonameid:'49518',
+    # #population: '11,055,976', area_km2: '26,338', gdp_dallar_usd: '7.7 Billion')
+    #
+    #
+    #
+	# TypCountry.create(id: 652, iso: 'BL', iso3: 'BLM', fips: 'TB',country: 'Saint Barthélemy', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'590', postal_code:'', languages:'fr', geonameid:'3578476',
+    # #population: '8,450', area_km2: '21', gdp_dallar_usd: '')
+	# TypCountry.create(id: 654, iso: 'SH', iso3: 'SHN', fips: 'SH',country: 'Saint Helena', continent:'AF', currency_code:'SHP', currency_name:'Pound', phone_prefix:'290', postal_code: '^(STHL1ZZ)$', languages:'en-SH', geonameid:'3370751',
+    # #population: '7,460', area_km2: '410', gdp_dallar_usd: '')
+	# TypCountry.create(id: 659, iso: 'KN', iso3: 'KNA', fips: 'SC',country: 'Saint Kitts and Nevis',continent: 'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-869', postal_code:'', languages:'en-KN', geonameid:'3575174',
+    # #population: '51,134', area_km2: '261', gdp_dallar_usd: '767 Million')
+	# ## TypCountry.create(id: 660, iso: 'AI', iso3: 'AIA', fips: 'AV',country: 'Anguilla', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-264', postal_code:'', languages:'en-AI', geonameid:'3573511',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 662, iso: 'LC', iso3: 'LCA', fips: 'ST',country: 'Saint Lucia', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-758', postal_code:'', languages:'en-LC', geonameid:'3576468',
+    # #population: '160,922', area_km2: '616', gdp_dallar_usd: '1.377 Billion')
+	# TypCountry.create(id: 663, iso: 'MF', iso3: 'MAF', fips: 'RN',country: 'Saint Martin', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'590', postal_code:'', languages:'fr', geonameid:'3578421',
+    # #population: '35,925', area_km2: '53', gdp_dallar_usd: '561.5 Million')
+	# TypCountry.create(id: 666, iso: 'PM', iso3: 'SPM', fips: 'SB',country: 'Saint Pierre and Miquelon', continent:'NA', currency_code:'EUR', currency_name:'Euro', phone_prefix:'508', postal_code: '^(97500)$', languages:'fr-PM', geonameid:'3424932',
+    # #population: '7,012', area_km2: '242', gdp_dallar_usd: '215.3 Million')
+	# TypCountry.create(id: 670, iso: 'VC', iso3: 'VCT', fips: 'VC',country: 'Saint Vincent and the Grenadines', continent:'NA', currency_code:'XCD', currency_name:'Dollar', phone_prefix:'+1-784', postal_code:'', languages:'en-VC,fr', geonameid:'3577815',
+    # #population: '104,217', area_km2: '389', gdp_dallar_usd: '742 Million')
+	# TypCountry.create(id: 674, iso: 'SM', iso3: 'SMR', fips: 'SM',country: 'San Marino', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'378', postal_code: '^(4789d)$', languages:'it-SM', geonameid:'3168068',
+    # #population: '31,477', area_km2: '61', gdp_dallar_usd: '1.866 Billion')
+	# TypCountry.create(id: 678, iso: 'ST', iso3: 'STP', fips: 'TP',country: 'Sao Tome and Principe', continent:'AF', currency_code:'STD', currency_name:'Dobra', phone_prefix:'239', postal_code:'', languages:'pt-ST', geonameid:'2410758',
+    # #population: '175,808', area_km2: '1,001', gdp_dallar_usd: '311 Million')
+	# TypCountry.create(id: 682, iso: 'SA', iso3: 'SAU', fips: 'SA',country: 'Saudi Arabia', continent:'AS', currency_code:'SAR', currency_name:'Rial', phone_prefix:'966', postal_code: '^(d{5})$', languages:'ar-SA', geonameid:'102358',
+    # #population: '25,731,776', area_km2: '1,960,582', gdp_dallar_usd: '718.5 Billion')
+	# TypCountry.create(id: 686, iso: 'SN', iso3: 'SEN', fips: 'SG',country: 'Senegal', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'221', postal_code: '^(d{5})$', languages:'fr-SN,wo,fuc,mnk', geonameid:'2245662',
+    # #population: '12,323,252', area_km2: '196,190', gdp_dallar_usd: '15.36 Billion')
+	# TypCountry.create(id: 688, iso: 'RS', iso3: 'SRB', fips: 'RB',country: 'Serbia', continent:'EU', currency_code:'RSD', currency_name:'Dinar', phone_prefix:'381', postal_code: '^(d{6})$', languages:'sr,hu,bs,rom', geonameid:'6290252',
+    # #population: '7,344,847', area_km2: '88,361', gdp_dallar_usd: '43.68 Billion')
+	# TypCountry.create(id: 690, iso: 'SC', iso3: 'SYC', fips: 'SE',country: 'Seychelles', continent:'AF', currency_code:'SCR', currency_name:'Rupee', phone_prefix:'248', postal_code:'', languages:'en-SC,fr-SC', geonameid:'241170',
+    # #population: '	88,340', area_km2: '455', gdp_dallar_usd: '1.271 Billion')
+	# TypCountry.create(id: 694, iso: 'SL', iso3: 'SLE', fips: 'SL',country: 'Sierra Leone', continent:'AF', currency_code:'SLL', currency_name:'Leone', phone_prefix:'232', postal_code:'', languages:'en-SL,men,tem', geonameid:'2403846',
+    # #population: '5,245,695', area_km2: '71,740', gdp_dallar_usd: '4.607 Billion')
+	# TypCountry.create(id: 702, iso: 'SG', iso3: 'SGP', fips: 'SN',country: 'Singapore', continent:'AS', currency_code:'SGD', currency_name:'Dollar', phone_prefix:'65', postal_code: '^(d{6})$', languages:'cmn,en-SG,ms-SG,ta-SG,zh-SG', geonameid:'1880251',
+    # #population: '4,701,069', area_km2: '693', gdp_dallar_usd: '295.7 Billion')
+	# TypCountry.create(id: 703, iso: 'SK', iso3: 'SVK', fips: 'LO',country: 'Slovakia', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'421', postal_code: '^(d{5})$', languages:'sk,hu', geonameid:'3057568',
+    # #population: '5,455,000', area_km2: '48,845', gdp_dallar_usd: '96.96 Billion')
+	# ### TypCountry.create(id: 704, iso: 'VN', iso3: 'VNM', fips: 'VM',country: 'Vietnam', continent:'AS', currency_code:'VND', currency_name:'Dong', phone_prefix:'84', postal_code: '^(d{6})$', languages:'vi,en,fr,zh,km', geonameid:'1562822',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 705, iso: 'SI', iso3: 'SVN', fips: 'SI',country: 'Slovenia', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'386', postal_code: '^(?:SI)*(d{4})$', languages:'sl,sh', geonameid:'3190538',
+    # #population: '2,007,000', area_km2: '20,273', gdp_dallar_usd: '46.82 Billion')
+	# TypCountry.create(id: 706, iso: 'SO', iso3: 'SOM', fips: 'SO',country: 'Somalia', continent:'AF', currency_code:'SOS', currency_name:'Shilling', phone_prefix:'252', postal_code: '^([A-Z]{2}d{5})$', languages:'so-SO,ar-SO,it,en-SO', geonameid:'51537',
+    # #population: '10,112,453', area_km2: '637,657', gdp_dallar_usd: '2.372 Billion')
+	# TypCountry.create(id: 710, iso: 'ZA', iso3: 'ZAF', fips: 'SF',country: 'South Africa', continent:'AF', currency_code:'ZAR', currency_name:'Rand', phone_prefix:'27', postal_code: '^(d{4})$', languages:'zu,xh,af,nso,en-ZA,tn,st,ts', geonameid:'953987',
+    # #population: '49,000,000', area_km2: '1,219,912', gdp_dallar_usd: '353.9 Billion')
+	# ## TypCountry.create(id: 716, iso: 'ZW', iso3: 'ZWE', fips: 'ZI',country: 'Zimbabwe', continent:'AF', currency_code:'ZWL', currency_name:'Dollar', phone_prefix:'263', postal_code:'', languages:'en-ZW,sn,nr,nd', geonameid:'878675',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 724, iso: 'ES', iso3: 'ESP', fips: 'SP',country: 'Spain', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'34', postal_code: '^(d{5})$', languages:'es-ES,ca,gl,eu', geonameid:'2510769',
+    # #population: '46,505,963', area_km2: '504,782', gdp_dallar_usd: '1.356 Trillion')
+	# ## TypCountry.create(id: 732, iso: 'EH', iso3: 'ESH', fips: 'WI',country: 'Western Sahara', continent:'AF', currency_code:'MAD', currency_name:'Dirham', phone_prefix:'212', postal_code:'', languages:'ar,mey', geonameid:'2461445',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 736, iso: 'SD', iso3: 'SDN', fips: 'SU',country: 'Sudan', continent:'AF', currency_code:'SDG', currency_name:'Dinar', phone_prefix:'249', postal_code: '^(d{5})$', languages:'ar-SD,en,fia', geonameid:'366755',
+    # #population: '35,000,000', area_km2: '1,861,484', gdp_dallar_usd: '52.5 Billion')
+	# TypCountry.create(id: 740, iso: 'SR', iso3: 'SUR', fips: 'NS',country: 'Suriname', continent:'SA', currency_code:'SRD', currency_name:'Dollar', phone_prefix:'597', postal_code:'', languages:'nl-SR,en,srn,hns,jv', geonameid:'3382998',
+    # #population: '492,829', area_km2: '163,270', gdp_dallar_usd: '5.009 Billion')
+	# TypCountry.create(id: 744, iso: 'SJ', iso3: 'SJM', fips: 'SV',country: 'Svalbard and Jan Mayen', continent:'EU', currency_code:'NOK', currency_name:'Krone', phone_prefix:'47', postal_code:'', languages:'no,ru', geonameid:'607072',
+    # #population: '2,550', area_km2: '62,049', gdp_dallar_usd: '')
+	# TypCountry.create(id: 748, iso: 'SZ', iso3: 'SWZ', fips: 'WZ',country: 'Swaziland', continent:'AF', currency_code:'SZL', currency_name:'Lilangeni', phone_prefix:'268', postal_code: '^([A-Z]d{3})$', languages:'en-SZ,ss-SZ', geonameid:'934841',
+    # #population: '1,354,051', area_km2: '17,363', gdp_dallar_usd: '3.807 Billion')
+	# TypCountry.create(id: 752, iso: 'SE', iso3: 'SWE', fips: 'SW',country: 'Sweden', continent:'EU', currency_code:'SEK', currency_name:'Krona', phone_prefix:'46', postal_code: '^(?:SE)*(d{5})$', languages:'sv-SE,se,sma,fi-SE', geonameid:'2661886',
+    # #population: '9,555,893', area_km2: '449,964', gdp_dallar_usd: '552 Billion')
+	# TypCountry.create(id: 756, iso: 'CH', iso3: 'CHE', fips: 'SZ',country: 'Switzerland', continent:'EU', currency_code:'CHF', currency_name:'Franc', phone_prefix:'41', postal_code: '^(d{4})$', languages:'de-CH,fr-CH,it-CH,rm', geonameid:'2658434',
+    # #population: '1,354,051', area_km2: '17,363', gdp_dallar_usd: '3.807 Billion')
+	# TypCountry.create(id: 760, iso: 'SY', iso3: 'SYR', fips: 'SY',country: 'Syria', continent:'AS', currency_code:'SYP', currency_name:'Pound', phone_prefix:'963', postal_code:'', languages:'ar-SY,ku,hy,arc,fr,en', geonameid:'163843',
+    # #population: '22,198,110', area_km2: '185,180', gdp_dallar_usd: '64.7 Billion')
+    #
+    #
+    #
+    #
+	# TypCountry.create(id: 762, iso: 'TJ', iso3: 'TJK', fips: 'TI',country: 'Tajikistan', continent:'AS', currency_code:'TJS', currency_name:'Somoni', phone_prefix:'992', postal_code: '^(d{6})$', languages:'tg,ru', geonameid:'1220409',
+    # #population: '7,487,489', area_km2: '143,100', gdp_dallar_usd: '8.513 Billion')
+	# TypCountry.create(id: 764, iso: 'TH', iso3: 'THA', fips: 'TH',country: 'Thailand', continent:'AS', currency_code:'THB', currency_name:'Baht', phone_prefix:'66', postal_code: '^(d{5})$', languages:'th,en', geonameid:'1605651',
+    # #population: '67,089,500', area_km2: '514,000', gdp_dallar_usd: '400.9 Billion')
+	# TypCountry.create(id: 768, iso: 'TG', iso3: 'TGO', fips: 'TO',country: 'Togo', continent:'AF', currency_code:'XOF', currency_name:'Franc', phone_prefix:'228', postal_code:'', languages:'fr-TG,ee,hna,kbp,dag,ha', geonameid:'2363686',
+    # #population: '6,587,239', area_km2: '	56,785', gdp_dallar_usd: '4.299 Billion')
+	# TypCountry.create(id: 772, iso: 'TK', iso3: 'TKL', fips: 'TL',country: 'Tokelau', continent:'OC', currency_code:'NZD', currency_name:'Dollar', phone_prefix:'690', postal_code:'', languages:'tkl,en-TK', geonameid:'4031074',
+    # #population: '1,466', area_km2: '10', gdp_dallar_usd: '')
+	# TypCountry.create(id: 776, iso: 'TO', iso3: 'TON', fips: 'TN',country: 'Tonga', continent:'OC', currency_code:'TOP', currency_name:'Pa''anga', phone_prefix:'676', postal_code:'', languages:'to,en-TO', geonameid:'4032283',
+    # #population: '122,580', area_km2: '748', gdp_dallar_usd: '477 Million')
+	# TypCountry.create(id: 780, iso: 'TT', iso3: 'TTO', fips: 'TD',country: 'Trinidad and Tobago', continent:'NA', currency_code:'TTD', currency_name:'Dollar', phone_prefix:'+1-868', postal_code:'', languages:'en-TT,hns,fr,es,zh', geonameid:'3573591',
+    # #population: '1,228,691', area_km2: '5,128', gdp_dallar_usd: '27.13 Billion')
+	# ### TypCountry.create(id: 784, iso: 'AE', iso3: 'ARE', fips: 'AE',country: 'United Arab Emirates', continent:'AS', currency_code:'AED', currency_name:'Dirham', phone_prefix:'971', postal_code:'', languages:'ar-AE,fa,en,hi,ur', geonameid:'290557',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 788, iso: 'TN', iso3: 'TUN', fips: 'TS',country: 'Tunisia', continent:'AF', currency_code:'TND', currency_name:'Dinar', phone_prefix:'216', postal_code: '^(d{4})$', languages:'ar-TN,fr', geonameid:'2464461',
+    # #population: '10,589,025', area_km2: '163,610', gdp_dallar_usd: '48.38 Billion')
+	# TypCountry.create(id: 792, iso: 'TR', iso3: 'TUR', fips: 'TU',country: 'Turkey', continent:'AS', currency_code:'TRY', currency_name:'Lira', phone_prefix:'90', postal_code: '^(d{5})$', languages:'tr-TR,ku,diq,az,av', geonameid:'298795',
+    # #population: '77,804,122', area_km2: '780,580', gdp_dallar_usd: '821.8 Billion')
+	# TypCountry.create(id: 795, iso: 'TM', iso3: 'TKM', fips: 'TX',country: 'Turkmenistan', continent:'AS', currency_code:'TMT', currency_name:'Manat', phone_prefix:'993', postal_code: '^(d{6})$', languages:'tk,ru,uz', geonameid:'1218197',
+    # #population: '4,940,916', area_km2: '488,100', gdp_dallar_usd: '40.56 Billion')
+	# TypCountry.create(id: 796, iso: 'TC', iso3: 'TCA', fips: 'TK',country: 'Turks and Caicos Islands', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-649', postal_code: '^(TKCA 1ZZ)$', languages:'en-TC', geonameid:'3576916',
+    # #population: '20,556', area_km2: '430', gdp_dallar_usd: '')
+	# TypCountry.create(id: 798, iso: 'TV', iso3: 'TUV', fips: 'TV',country: 'Tuvalu', continent:'OC', currency_code:'AUD', currency_name:'Dollar', phone_prefix:'688', postal_code:'', languages:'tvl,en,sm,gil', geonameid:'2110297',
+    # #population: '10,472', area_km2: '26', gdp_dallar_usd: '38 Million')
+    #
+    #
+    #
+    #
+	# TypCountry.create(id: 800, iso: 'UG', iso3: 'UGA', fips: 'UG',country: 'Uganda', continent:'AF', currency_code:'UGX', currency_name:'Shilling', phone_prefix:'256', postal_code:'', languages:'en-UG,lg,sw,ar', geonameid:'226074',
+    # #population: '33,398,682', area_km2: '236,040', gdp_dallar_usd: '22.6 Billion')
+	# TypCountry.create(id: 804, iso: 'UA', iso3: 'UKR', fips: 'UP',country: 'Ukraine', continent:'EU', currency_code:'UAH', currency_name:'Hryvnia', phone_prefix:'380', postal_code: '^(d{5})$', languages:'uk,ru-UA,rom,pl,hu', geonameid:'690791',
+    # #population: '45,415,596', area_km2: '603,700', gdp_dallar_usd: '175.5 Billion')
+	# ### TypCountry.create(id: 807, iso: 'MK', iso3: 'MKD', fips: 'MK',country: 'Macedonia', continent:'EU', currency_code:'MKD', currency_name:'Denar', phone_prefix:'389', postal_code: '^(d{4})$', languages:'mk,sq,tr,rmm,sr', geonameid:'718075',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 818, iso: 'EG', iso3: 'EGY', fips: 'EG',country: 'Egypt', continent:'AF', currency_code:'EGP', currency_name:'Pound', phone_prefix:'20', postal_code: '^(d{5})$', languages:'ar-EG,en,fr', geonameid:'357994',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 826, iso: 'GB', iso3: 'GBR', fips: 'UK',country: 'United Kingdom', continent:'EU', currency_code:'GBP', currency_name:'Pound', phone_prefix:'44', postal_code: '^(([A-Z]d{2}[A-Z]{2})|([A-Z]d{3}[A-Z]{2})|([A', languages:'en-GB,cy-GB,gd', geonameid:'2635167',
+    # #population: '62,348,447', area_km2: '244,820', gdp_dallar_usd: '2.49 Trillion')
+	# ### TypCountry.create(id: 831, iso: 'GG', iso3: 'GGY', fips: 'GK',country: 'Guernsey', continent:'EU', currency_code:'GBP', currency_name:'Pound', phone_prefix:'+44-1481', postal_code: '^(([A-Z]d{2}[A-Z]{2})|([A-Z]d{3}[A-Z]{2})|([A', languages:'en,fr', geonameid:'3042362',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 832, iso: 'JE', iso3: 'JEY', fips: 'JE',country: 'Jersey', continent:'EU', currency_code:'GBP', currency_name:'Pound', phone_prefix:'+44-1534', postal_code: '^(([A-Z]d{2}[A-Z]{2})|([A-Z]d{3}[A-Z]{2})|([A', languages:'en,pt', geonameid:'3042142',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 833, iso: 'IM', iso3: 'IMN', fips: 'IM',country: 'Isle of Man', continent:'EU', currency_code:'GBP', currency_name:'Pound', phone_prefix:'+44-1624', postal_code: '^(([A-Z]d{2}[A-Z]{2})|([A-Z]d{3}[A-Z]{2})|([A', languages:'en,gv', geonameid:'3042225',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# ###TypCountry.create(id: 834, iso: 'TZ', iso3: 'TZA', fips: 'TZ',country: 'Tanzania', continent:'AF', currency_code:'TZS', currency_name:'Shilling', phone_prefix:'255', postal_code:'', languages:'sw-TZ,en,ar', geonameid:'149590',
+    # #population: '41,892,895', area_km2: '945,087', gdp_dallar_usd: '31.94 Billion')
+	# TypCountry.create(id: 840, iso: 'US', iso3: 'USA', fips: 'US',country: 'United States', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'1', postal_code: '^(d{9})$', languages:'en-US,es-US,haw', geonameid:'6252001',
+    # #population: '310,232,863', area_km2: '9,629,091', gdp_dallar_usd: '16.72 Trillion')
+	# TypCountry.create(id: 850, iso: 'VI', iso3: 'VIR', fips: 'VQ',country: 'U.S. Virgin Islands', continent:'NA', currency_code:'USD', currency_name:'Dollar', phone_prefix:'+1-340', postal_code:'', languages:'en-VI', geonameid:'4796775',
+    # #population: '108,708', area_km2: '352', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 855, iso: 'XK', iso3: 'XKX', fips: 'KV',country: 'Kosovo', continent:'EU', currency_code:'EUR', currency_name:'Euro', phone_prefix:'', postal_code:'', languages:'sq,sr', geonameid:'831053'
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 858, iso: 'UY', iso3: 'URY', fips: 'UY',country: 'Uruguay', continent:'SA', currency_code:'UYU', currency_name:'Peso', phone_prefix:'598', postal_code: '^(d{5})$', languages:'es-UY', geonameid:'3439705',
+    # #population: '3,477,000', area_km2: '176,220', gdp_dallar_usd: '57.11 Billion')
+	# TypCountry.create(id: 860, iso: 'UZ', iso3: 'UZB', fips: 'UZ',country: 'Uzbekistan', continent:'AS', currency_code:'UZS', currency_name:'Som', phone_prefix:'998', postal_code: '^(d{6})$', languages:'uz,ru,tg', geonameid:'1512440',
+    # #population: '27,865,738', area_km2: '447,400', gdp_dallar_usd: '55.18 Billion')
+    #
+    #
+	# TypCountry.create(id: 862, iso: 'VE', iso3: 'VEN', fips: 'VE',country: 'Venezuela', continent:'SA', currency_code:'VEF', currency_name:'Bolivar', phone_prefix:'58', postal_code: '^(d{4})$', languages:'es-VE', geonameid:'3625428',
+    # #population: '27,223,228', area_km2: '912,050', gdp_dallar_usd: '367.5 Billion')
+    #
+	# TypCountry.create(id: 876, iso: 'WF', iso3: 'WLF', fips: 'WF',country: 'Wallis and Futuna', continent:'OC', currency_code:'XPF', currency_name:'Franc', phone_prefix:'681', postal_code: '^(986d{2})$', languages:'wls,fud,fr-WF', geonameid:'4034749',
+    # #population: '16,025', area_km2: '274', gdp_dallar_usd: '')
+	# ### TypCountry.create(id: 882, iso: 'WS', iso3: 'WSM', fips: 'WS',country: 'Samoa', continent:'OC', currency_code:'WST', currency_name:'Tala', phone_prefix:'685', postal_code:'', languages:'sm,en-WS', geonameid:'4034894',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 887, iso: 'YE', iso3: 'YEM', fips: 'YM',country: 'Yemen', continent:'AS', currency_code:'YER', currency_name:'Rial', phone_prefix:'967', postal_code:'', languages:'ar-YE', geonameid:'69543',
+    # #population: '23,495,361', area_km2: '527,970', gdp_dallar_usd: '43.89 Billion')
+	# ### TypCountry.create(id: 891, iso: 'CS', iso3: 'SCG', fips: 'YI',country: 'Serbia and Montenegro', continent:'EU', currency_code:'RSD', currency_name:'Dinar', phone_prefix:'381', postal_code: '^(d{5})$', languages:'cu,hu,sq,sr', geonameid:'863038',
+    # #population: '', area_km2: '', gdp_dallar_usd: '')
+	# TypCountry.create(id: 894, iso: 'ZM', iso3: 'ZMB', fips: 'ZA',country: 'Zambia', continent:'AF', currency_code:'ZMK', currency_name:'Kwacha', phone_prefix:'260', postal_code: '^(d{5})$', languages:'en-ZM,bem,loz,lun,lue,ny,toi', geonameid:'895949',
+    # #population: '13,460,305', area_km2: '752,614', gdp_dallar_usd: '22.24 Billion');
 
   	#Typ_regions
 	TypRegion.create(id: 1, typ_country_id: 4, name:'Badakhshan', timezone:'Asia/Kabul')

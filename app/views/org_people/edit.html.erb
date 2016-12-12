@@ -1,10 +1,13 @@
+<% content_for(:sidebar) do %>
+    <%= render :partial => "layouts/sidebar" %>
+<% end %>
 <div class="col-md-8 col-md-offset-2 main">
     <% provide(:title, "Edit user") %>
     <center><h1>Update your profile</h1></center>
-    <%=  form_for :person do | f | %>
+    <%=  form_for (@person) do | f | %>
         <%= render 'shared/error_messages' %>
         <div class="col-md-12">
-            <%= render 'layouts/contactfields', f: f  %>
+            <%= render 'layouts/contactfields', f: f %>
             <%= f.submit "Save Changes", class: "btn btn-large btn-primary" %>
         </div>
     <% end %>

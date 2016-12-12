@@ -3,11 +3,11 @@
     <center><h1>Log in</h1></center>
     <%=  form_for(resource, as: resource_name, url: org_person_session_path) do |f| %>
         <div>
-            <%= f.email_field :email, autofocus: "off", placeholder: "Email", :class => "form-control" %>
+            <%= f.email_field :email, autofocus: true, placeholder: "Email", :class => "form-control" %>
         </div>
 
         <div>
-            <%= f.password_field :password, autofocus: "off", placeholder: "Password", :class => "form-control" %>
+            <%= f.password_field :password, autocomplete: "off", placeholder: "Password", :class => "form-control" %>
         </div>
 
         <% if devise_mapping.rememberable? -%>
